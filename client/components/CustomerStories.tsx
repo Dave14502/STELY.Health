@@ -79,7 +79,7 @@ export default function CustomerStories() {
                   <span className={`text-xs font-semibold px-3 py-1 rounded-full ${
                     item.indicator.includes('Optimal')
                       ? 'bg-blue-100 text-blue-700'
-                      : item.indicator.includes('Average')
+                      : item.indicator.includes('Durchschnitt')
                       ? 'bg-gray-300 text-gray-700'
                       : 'bg-red-100 text-red-700'
                   }`}>
