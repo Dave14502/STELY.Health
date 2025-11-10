@@ -38,7 +38,10 @@ export default function Index() {
               </p>
 
               {/* CTA Button */}
-              <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold px-8 py-3 rounded-full transition shadow-lg hover:shadow-xl text-lg">
+              <button
+                onClick={() => setIsWaitlistOpen(true)}
+                className="bg-blue-500 hover:bg-blue-600 text-white font-bold px-8 py-3 rounded-full transition shadow-lg hover:shadow-xl text-lg"
+              >
                 Hol dir deinen ersten Test
               </button>
             </div>
