@@ -2,7 +2,7 @@ import { Instagram, Twitter, Facebook, Youtube } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+    <footer id="footer" className="w-full bg-gradient-to-br from-slate-900 to-slate-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           {/* Logo and Social */}
@@ -56,8 +56,16 @@ export default function Footer() {
 
         {/* Disclaimer */}
         <div className="border-t border-gray-700 pt-8 mt-8">
-          <p className="text-gray-400 text-sm leading-relaxed">
+          <p className="text-gray-400 text-sm leading-relaxed mb-6">
             Rythm Health ist ein Gesundheitstechnologieunternehmen und keine Laboratoriums- oder Arztpraxis. Alle Labor- und medizinischen Dienste werden von unabhängigen Drittanbietern bereitgestellt. Diese Labor- und medizinischen Dienstleister legen ihre eigenen Preise fest. Obwohl Rythm Health möglicherweise einen einfachen Zugang zu bestimmten Labor- und medizinischen Dienstleistern in Ihrem Namen erleichtert, empfiehlt Rythm Health Sie nicht an Gesundheitsdienstleister weiter oder verweist Sie nicht an diese, und Sie können frei einen Gesundheitsdienstleister wählen und Rythm Health's Services weiterhin nutzen.
+          </p>
+
+          <p className="text-gray-400 text-sm leading-relaxed mb-6">
+            Rythm Health bietet keine medizinischen Ratschläge, Laborservices, Diagnosen, medizinische Behandlung oder irgendeine Form von medizinischer Meinung durch unsere Services oder auf andere Weise.
+          </p>
+
+          <p className="text-gray-400 text-sm leading-relaxed">
+            Rythm Health's Services sind kein Ersatz für medizinische Versorgung, medizinische Ratschläge und/oder ein ausführliches Gespräch mit deinem Hausarzt oder einem anderen zugelassenen Anbieter. Wenn du Fragen zu Testergebnissen hast, empfehlen wir dir, diese mit deinem Hausarzt oder einem anderen zugelassenen Anbieter zu besprechen.
           </p>
         </div>
       </div>

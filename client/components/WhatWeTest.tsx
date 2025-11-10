@@ -4,57 +4,53 @@ import { Plus, Minus } from 'lucide-react';
 interface TestItem {
   id: string;
   name: string;
-  icon: string;
 }
 
 interface TestCategory {
   title: string;
-  icon: string;
   items: TestItem[];
 }
 
 const testCategories: TestCategory[] = [
   {
     title: 'Hormonelles Gleichgewicht',
-    icon: '⚖️',
     items: [
-      { id: '1', name: 'Östrogen (Estradiol E2)', icon: '♀️' },
-      { id: '2', name: 'Progesteron', icon: '♀️' },
-      { id: '3', name: 'SHBG', icon: '' },
-      { id: '4', name: 'TSH (Schilddrüse)', icon: '' },
-      { id: '5', name: 'Gesamt- & freies Testosteron', icon: '♂️' },
+      { id: '1', name: 'Östrogen (Östradiol E2)' },
+      { id: '2', name: 'Progesteron' },
+      { id: '3', name: 'SHBG' },
+      { id: '4', name: 'TSH (Schilddrüse)' },
+      { id: '5', name: 'Freies Testosteron' },
+      { id: '6', name: 'Gesamt-Testosteron' },
     ],
   },
   {
     title: 'Herzgesundheit',
-    icon: '❤️',
     items: [
-      { id: '6', name: 'ApoB', icon: '' },
-      { id: '7', name: 'LDL-Cholesterin', icon: '' },
-      { id: '8', name: 'CRP (Entzündung)', icon: '' },
-      { id: '9', name: 'HDL-Cholesterin', icon: '' },
+      { id: '7', name: 'ApoB' },
+      { id: '8', name: 'LDL-Cholesterin' },
+      { id: '9', name: 'CRP (Entzündung)' },
+      { id: '10', name: 'HDL-Cholesterin' },
+      { id: '11', name: 'Triglyceride' },
     ],
   },
   {
     title: 'Stoffwechseleffizienz',
-    icon: '🏥',
     items: [
-      { id: '10', name: 'Ferritin (Eisen)', icon: '' },
-      { id: '11', name: 'Albumin', icon: '' },
-      { id: '12', name: 'Freies T3 (Schilddrüse)', icon: '' },
-      { id: '13', name: 'Vitamin D', icon: '' },
-      { id: '14', name: 'Triglyceride', icon: '' },
-      { id: '15', name: 'LDL-C / ApoB (Partikelgröße)', icon: '' },
-      { id: '16', name: 'Triglyceride / HDL', icon: '' },
+      { id: '12', name: 'Ferritin (Eisen)' },
+      { id: '13', name: 'Albumin' },
+      { id: '14', name: 'Freies T3 (Schilddrüse)' },
+      { id: '15', name: 'Vitamin D' },
+      { id: '16', name: 'Triglyceride' },
+      { id: '17', name: 'LDL-C / ApoB (Partikelgröße)' },
+      { id: '18', name: 'Triglyceride / HDL' },
     ],
   },
   {
     title: 'Langlebigkeit',
-    icon: '🎂',
     items: [
-      { id: '17', name: 'Biologisches Alter', icon: '' },
-      { id: '18', name: 'Rythm-Punktzahl', icon: '' },
-      { id: '19', name: 'Personalisierte Baselines', icon: '' },
+      { id: '19', name: 'Biologisches Alter' },
+      { id: '20', name: 'Rythm-Punktzahl' },
+      { id: '21', name: 'Personalisierte Baselines' },
     ],
   },
 ];
@@ -71,9 +67,9 @@ export default function WhatWeTest() {
   };
 
   return (
-    <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
+    <section id="what-we-test" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16">Was wir jeden Monat testen</h2>
+        <h2 className="text-5xl font-bold text-center mb-16">Was wir jeden Monat testen</h2>
 
         <div className="space-y-4">
           {testCategories.map((category) => (
@@ -82,10 +78,7 @@ export default function WhatWeTest() {
                 onClick={() => toggleCategory(category.title)}
                 className="w-full px-6 py-4 flex items-center justify-between bg-white hover:bg-gray-50 transition"
               >
-                <div className="flex items-center gap-4">
-                  <span className="text-2xl">{category.icon}</span>
-                  <h3 className="text-lg font-semibold text-black">{category.title}</h3>
-                </div>
+                <h3 className="text-lg font-semibold text-black">{category.title}</h3>
                 {expandedCategories.includes(category.title) ? (
                   <Minus className="w-5 h-5 text-gray-400" />
                 ) : (
@@ -97,9 +90,8 @@ export default function WhatWeTest() {
                 <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
                   <ul className="space-y-3">
                     {category.items.map((item) => (
-                      <li key={item.id} className="flex items-center gap-3 text-gray-700">
-                        {item.icon && <span>{item.icon}</span>}
-                        <span>{item.name}</span>
+                      <li key={item.id} className="text-gray-700">
+                        {item.name}
                       </li>
                     ))}
                   </ul>

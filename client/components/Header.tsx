@@ -14,11 +14,21 @@ export default function Header() {
           
           {/* Desktop Menu */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#" className="text-gray-700 hover:text-black transition">Über</a>
-            <a href="#" className="text-gray-700 hover:text-black transition">So funktioniert es</a>
-            <a href="#" className="text-gray-700 hover:text-black transition">Preise</a>
-            <a href="#" className="text-gray-700 hover:text-black transition">Häufig gestellte Fragen</a>
+            <a href="#how-it-works" className="text-gray-700 hover:text-black transition">Wie es funktioniert</a>
+            <a href="#what-we-test" className="text-gray-700 hover:text-black transition">Was wir testen</a>
+            <a href="#pricing" className="text-gray-700 hover:text-black transition">Preisgestaltung</a>
+            <a href="#footer" className="text-gray-700 hover:text-black transition">Partner mit uns</a>
           </nav>
+
+          {/* Desktop Buttons */}
+          <div className="hidden md:flex items-center gap-4">
+            <button className="text-black hover:text-gray-700 transition font-medium">
+              Anmelden
+            </button>
+            <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-900 transition font-medium">
+              Rythm erhalten
+            </button>
+          </div>
 
           {/* Mobile Menu Button */}
           <button
@@ -36,10 +46,17 @@ export default function Header() {
         {/* Mobile Menu */}
         {menuOpen && (
           <nav className="md:hidden mt-4 flex flex-col gap-4">
-            <a href="#" className="text-gray-700 hover:text-black transition">Über</a>
-            <a href="#" className="text-gray-700 hover:text-black transition">So funktioniert es</a>
-            <a href="#" className="text-gray-700 hover:text-black transition">Preise</a>
-            <a href="#" className="text-gray-700 hover:text-black transition">Häufig gestellte Fragen</a>
+            <a href="#how-it-works" className="text-gray-700 hover:text-black transition">Wie es funktioniert</a>
+            <a href="#what-we-test" className="text-gray-700 hover:text-black transition">Was wir testen</a>
+            <a href="#pricing" className="text-gray-700 hover:text-black transition">Preisgestaltung</a>
+            <a href="#footer" className="text-gray-700 hover:text-black transition">Partner mit uns</a>
+            <hr className="my-2" />
+            <button className="text-left text-gray-700 hover:text-black transition font-medium">
+              Anmelden
+            </button>
+            <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-900 transition font-medium text-left">
+              Rythm erhalten
+            </button>
           </nav>
         )}
       </div>

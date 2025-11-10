@@ -12,23 +12,23 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: 'Matt Rabasco',
+    name: 'Samantha',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
-    quote: 'Rythm ist eine großartige Option, um deine Gesundheitsmetriken innerhalb von 7 Tagen im Auge zu behalten. Das Erlebnis ist revolutionär und alle Tests bleiben auf Krankenhauspflege-Niveau.',
+    quote: 'Ich hatte schon lange auf ein Produkt wie dieses gehofft, und nachdem ich Rythm entdeckt habe, wurden meine Erwartungen übertroffen. Das Erlebnis ist nahtlos (eigentlich ziemlich spaßig!). Was dies revolutionär macht, ist, dass alle Tests auf Krankenhauspflege-Niveau bleiben. Der einzige Unterschied ist nun die Möglichkeit, dein eigenes Blut von zu Hause aus zu entnehmen.',
     rating: 5,
   },
   {
     id: 2,
-    name: 'Sarah Johnson',
+    name: 'Matt Rabasco',
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
-    quote: 'Ich war den ganzen Tag schlecht drauf, egal wie viel ich ruhte. Rythm erkannte niedriges freies T3. Nach ein paar Anpassungen ist meine Energie stabil.',
+    quote: 'Das Rythm-Team war unglaublich gründlich in seiner Kommunikation und äußerst unterstützend bei jedem Schritt von Versand, Sammlung, Lieferung und Ergebnissen, was mir geholfen hat, meine Gesundheit zum Besseren zu wenden.',
     rating: 5,
   },
   {
     id: 3,
-    name: 'James A',
+    name: 'Gino',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop',
-    quote: 'Ich dachte, meine schlechte Laune und mangelnde Libido seien einfach Teil eines arbeitsreichen Lebens. Aber Rythm half mir, ein Hormonungleichgewicht zu entdecken.',
+    quote: 'Die Qualität des Service und die schnelle Verarbeitung der Ergebnisse waren beeindruckend. Ich konnte meine Gesundheit besser verstehen und entsprechend handeln.',
     rating: 5,
   },
 ];
@@ -47,9 +47,9 @@ export default function Testimonials() {
   const currentTestimonial = testimonials[currentIndex];
 
   return (
-    <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
+    <section className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">Was Kunden sagen</h2>
+        <h2 className="text-5xl font-bold text-center mb-16">Was Kunden sagen</h2>
 
         <div className="flex items-center justify-between gap-8">
           <button
@@ -66,7 +66,7 @@ export default function Testimonials() {
               ))}
             </div>
 
-            <p className="text-gray-700 mb-6 min-h-20 leading-relaxed">
+            <p className="text-gray-700 mb-6 leading-relaxed">
               {currentTestimonial.quote}
             </p>
 

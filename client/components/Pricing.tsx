@@ -2,12 +2,12 @@ import { Check } from 'lucide-react';
 
 export default function Pricing() {
   return (
-    <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
+    <section id="pricing" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
       <div className="max-w-4xl mx-auto">
         <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-amber-100 via-amber-50 to-orange-50 p-12 mb-12">
           <img
             src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=400&fit=crop"
-            alt="Rythm product"
+            alt="Rythm-Produkt"
             className="w-full h-64 object-cover rounded-xl mb-8"
           />
 
@@ -18,7 +18,7 @@ export default function Pricing() {
             <p className="text-sm text-gray-600 mt-2">+ Versand & Bearbeitung</p>
           </div>
 
-          <button className="w-full bg-gray-900 text-white py-4 rounded-lg font-semibold hover:bg-black transition mb-4">
+          <button className="w-full bg-gray-900 text-white py-4 rounded-lg font-bold hover:bg-black transition mb-4 text-lg">
             Hol dir deinen ersten Test
           </button>
 
