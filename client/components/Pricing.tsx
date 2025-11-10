@@ -7,13 +7,13 @@ export default function Pricing() {
         <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-amber-100 via-amber-50 to-orange-50 p-12 mb-12">
           <img
             src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=400&fit=crop"
-            alt="Rythm-Produkt"
+            alt="STELY-Produkt"
             className="w-full h-64 object-cover rounded-xl mb-8"
           />
 
-          <h2 className="text-4xl font-bold text-center mb-2">Die Rythm-Mitgliedschaft</h2>
+          <h2 className="text-4xl font-bold text-center mb-2">Die STELY-Mitgliedschaft</h2>
           <div className="text-center mb-8">
-            <span className="text-4xl font-bold text-gray-900">$79</span>
+            <span className="text-4xl font-bold text-gray-900">ab 89€</span>
             <span className="text-gray-600 ml-2">/Monat</span>
             <p className="text-sm text-gray-600 mt-2">+ Versand & Bearbeitung</p>
           </div>
@@ -34,11 +34,11 @@ export default function Pricing() {
           <h3 className="text-2xl font-bold mb-6 text-gray-900">Was ist enthalten</h3>
           <div className="space-y-4">
             {[
-              'Ein neuer Rythm-Test jeden Monat',
+              'Ein neuer STELY-Test jeden Monat',
               'Schneller Versand',
               'Kostenloser Probenabholservice',
               'Schneller, menschlicher Kundenservice',
-              'Rythm-Vorteile',
+              'STELY-Vorteile',
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-3">
                 <div className="w-6 h-6 rounded-full bg-gray-900 text-white flex items-center justify-center flex-shrink-0">

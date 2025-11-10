@@ -9,7 +9,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-black">
-            rythm
+            STELY
           </div>
           
           {/* Desktop Menu */}
@@ -26,7 +26,7 @@ export default function Header() {
               Anmelden
             </button>
             <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-900 transition font-medium">
-              Rythm erhalten
+              STELY erhalten
             </button>
           </div>
 
@@ -55,7 +55,7 @@ export default function Header() {
               Anmelden
             </button>
             <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-900 transition font-medium text-left">
-              Rythm erhalten
+              STELY erhalten
             </button>
           </nav>
         )}

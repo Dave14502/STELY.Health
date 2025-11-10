@@ -10,18 +10,18 @@ interface FAQItem {
 const faqItems: FAQItem[] = [
   {
     id: 1,
-    question: 'Wie unterscheidet sich Rythm?',
-    answer: 'Rythm ist das einfachste Bluttest-System der Welt. Mit nur wenigen Tropfen Blut von zu Hause aus kannst du umfassende Gesundheitsmetriken verfolgen - kein Arzt, kein Termin, kein Problem. Alle Tests bleiben auf Krankenhauspflege-Niveau.',
+    question: 'Wie unterscheidet sich STELY?',
+    answer: 'STELY ist das einfachste Bluttest-System der Welt. Mit nur wenigen Tropfen Blut von zu Hause aus kannst du umfassende Gesundheitsmetriken verfolgen - kein Arzt, kein Termin, kein Problem. Alle Tests bleiben auf Krankenhauspflege-Niveau.',
   },
   {
     id: 2,
-    question: 'Ist Rythm HIPAA-konform?',
-    answer: 'Ja, Rythm Health ist HIPAA-konform und erfüllt alle geltenden Datenschutzbestimmungen. Deine Daten sind sicher und privat.',
+    question: 'Ist STELY HIPAA-konform?',
+    answer: 'Ja, STELY ist HIPAA-konform und erfüllt alle geltenden Datenschutzbestimmungen. Deine Daten sind sicher und privat.',
   },
   {
     id: 3,
-    question: 'Akzeptiert Rythm HSA/FSA-Zahlungen?',
-    answer: 'Ja, Rythm-Tests sind HSA/FSA berechtigt, was bedeutet, dass du mit vor Steuern abgezogenen Mitteln zahlen kannst.',
+    question: 'Akzeptiert STELY HSA/FSA-Zahlungen?',
+    answer: 'Ja, STELY-Tests sind HSA/FSA berechtigt, was bedeutet, dass du mit vor Steuern abgezogenen Mitteln zahlen kannst.',
   },
   {
     id: 4,
@@ -31,12 +31,12 @@ const faqItems: FAQItem[] = [
   {
     id: 5,
     question: 'Wie genau sind Heimtests?',
-    answer: 'Rythm-Tests nutzen dieselben Labortests wie Kliniken. Die Genauigkeit ist identisch mit klinischen Tests - es ist nur einfacher von zu Hause aus zu machen.',
+    answer: 'STELY-Tests nutzen dieselben Labortests wie Kliniken. Die Genauigkeit ist identisch mit klinischen Tests - es ist nur einfacher von zu Hause aus zu machen.',
   },
   {
     id: 6,
     question: 'Kann ich mein Abonnement kündigen?',
-    answer: 'Ja, du kannst dein Rythm-Abonnement jederzeit überspringen oder kündigen. Es gibt keine versteckten Gebühren oder Kündigungsstrafen.',
+    answer: 'Ja, du kannst dein STELY-Abonnement jederzeit überspringen oder kündigen. Es gibt keine versteckten Gebühren oder Kündigungsstrafen.',
   },
   {
     id: 7,
@@ -50,8 +50,8 @@ const faqItems: FAQItem[] = [
   },
   {
     id: 9,
-    question: 'Ersetzt Rythm meinen Arzt?',
-    answer: 'Nein, Rythm ist nicht dazu gedacht, einen Arzt zu ersetzen. Es ist ein Tool zur Selbstüberwachung und zur besseren Zusammenarbeit mit deinem Gesundheitsteam. Du solltest deine Ergebnisse mit deinem Arzt besprechen.',
+    question: 'Ersetzt STELY meinen Arzt?',
+    answer: 'Nein, STELY ist nicht dazu gedacht, einen Arzt zu ersetzen. Es ist ein Tool zur Selbstüberwachung und zur besseren Zusammenarbeit mit deinem Gesundheitsteam. Du solltest deine Ergebnisse mit deinem Arzt besprechen.',
   },
 ];
 

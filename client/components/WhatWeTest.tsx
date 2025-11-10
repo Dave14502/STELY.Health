@@ -49,7 +49,7 @@ const testCategories: TestCategory[] = [
     title: 'Langlebigkeit',
     items: [
       { id: '19', name: 'Biologisches Alter' },
-      { id: '20', name: 'Rythm-Punktzahl' },
+      { id: '20', name: 'STELY-Punktzahl' },
       { id: '21', name: 'Personalisierte Baselines' },
     ],
   },

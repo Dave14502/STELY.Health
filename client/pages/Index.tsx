@@ -37,7 +37,7 @@ export default function Index() {
 
               {/* Price */}
               <p className="text-lg text-gray-900 mb-8">
-                Alles für nur <span className="font-bold">$79.</span>
+                <span className="font-bold">Ab 89€ im Monat</span>
               </p>
 
               {/* CTA Button */}
@@ -50,7 +50,7 @@ export default function Index() {
             <div className="flex justify-center">
               <img
                 src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=600&fit=crop"
-                alt="Rythm Bluttest-Kit"
+                alt="STELY Bluttest-Kit"
                 className="w-full h-auto rounded-2xl object-cover"
               />
             </div>
