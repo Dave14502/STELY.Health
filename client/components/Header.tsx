@@ -2,7 +2,11 @@ import { useState } from 'react';
 import * as React from 'react';
 import { Menu, X } from 'lucide-react';
 
-export default function Header() {
+interface HeaderProps {
+  onOpenWaitlist: () => void;
+}
+
+export default function Header({ onOpenWaitlist }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -44,10 +48,16 @@ export default function Header() {
 
           {/* Desktop Buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <button className="text-black hover:text-gray-700 transition font-medium">
+            <button
+              onClick={onOpenWaitlist}
+              className="text-black hover:text-gray-700 transition font-medium"
+            >
               Anmelden
             </button>
-            <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-900 transition font-medium">
+            <button
+              onClick={onOpenWaitlist}
+              className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-900 transition font-medium"
+            >
               STELY erhalten
             </button>
           </div>

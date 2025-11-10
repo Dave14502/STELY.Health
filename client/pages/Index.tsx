@@ -14,7 +14,7 @@ export default function Index() {
 
   return (
     <div className="w-full bg-white">
-      <Header />
+      <Header onOpenWaitlist={() => setIsWaitlistOpen(true)} />
 
       {/* Hero Section */}
       <section className="w-full bg-white">
@@ -90,7 +90,7 @@ export default function Index() {
       <HowItWorks />
       <WhatWeTest />
       <WayBetter />
-      <Pricing />
+      <Pricing onOpenWaitlist={() => setIsWaitlistOpen(true)} />
       <FAQ />
 
       <Footer />

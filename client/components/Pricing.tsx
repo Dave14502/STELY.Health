@@ -1,6 +1,10 @@
 import { Check } from 'lucide-react';
 
-export default function Pricing() {
+interface PricingProps {
+  onOpenWaitlist: () => void;
+}
+
+export default function Pricing({ onOpenWaitlist }: PricingProps) {
   return (
     <section id="pricing" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
       <div className="max-w-4xl mx-auto">
@@ -18,7 +22,10 @@ export default function Pricing() {
             <p className="text-sm text-gray-600 mt-2">+ Versand & Bearbeitung</p>
           </div>
 
-          <button className="w-full bg-gray-900 text-white py-4 rounded-lg font-bold hover:bg-black transition mb-4 text-lg">
+          <button
+            onClick={onOpenWaitlist}
+            className="w-full bg-gray-900 text-white py-4 rounded-lg font-bold hover:bg-black transition mb-4 text-lg"
+          >
             Hol dir deinen ersten Test
           </button>
 
