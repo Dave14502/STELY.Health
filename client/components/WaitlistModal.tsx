@@ -112,7 +112,7 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
                       Wird hinzugefügt...
                     </span>
                   ) : (
-                    'Join Waitlist'
+                    'Zur Warteliste'
                   )}
                 </button>
               </form>
