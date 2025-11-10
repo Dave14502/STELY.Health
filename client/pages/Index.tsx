@@ -17,8 +17,12 @@ export default function Index() {
       <Header />
 
       {/* Hero Section */}
-      <section className="w-full">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 lg:py-24">
+      <section className="w-full relative overflow-hidden bg-gradient-to-br from-white via-blue-50/30 to-white">
+        {/* Decorative shapes */}
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-200/20 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-emerald-200/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-20 lg:py-24 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
@@ -58,27 +62,37 @@ export default function Index() {
         </div>
 
         {/* EU Validation Section */}
-        <div className="w-full bg-gray-50 border-t border-gray-200 px-4 sm:px-6 lg:px-8 py-16">
+        <div className="w-full bg-gradient-to-b from-gray-50 to-white border-t border-gray-200 px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
-              <div className="flex flex-col items-center gap-3 bg-white p-6 rounded-lg border border-gray-200 text-center">
-                <span className="text-2xl">✓</span>
+              <div className="flex flex-col items-center gap-4 bg-gradient-to-br from-blue-50 to-white p-6 rounded-xl border border-blue-200/50 text-center hover:shadow-md transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center">
+                  <span className="text-xl">🏷️</span>
+                </div>
                 <p className="text-gray-700 font-medium text-sm">CE-gekennzeichnetes Testkit nach EU-IVDR</p>
               </div>
-              <div className="flex flex-col items-center gap-3 bg-white p-6 rounded-lg border border-gray-200 text-center">
-                <span className="text-2xl">✓</span>
+              <div className="flex flex-col items-center gap-4 bg-gradient-to-br from-emerald-50 to-white p-6 rounded-xl border border-emerald-200/50 text-center hover:shadow-md transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 bg-emerald-100 rounded-full flex items-center justify-center">
+                  <span className="text-xl">🔬</span>
+                </div>
                 <p className="text-gray-700 font-medium text-sm">Analyse in DAkkS-akkreditiertem Labor (DIN EN ISO 15189)</p>
               </div>
-              <div className="flex flex-col items-center gap-3 bg-white p-6 rounded-lg border border-gray-200 text-center">
-                <span className="text-2xl">✓</span>
+              <div className="flex flex-col items-center gap-4 bg-gradient-to-br from-purple-50 to-white p-6 rounded-xl border border-purple-200/50 text-center hover:shadow-md transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center">
+                  <span className="text-xl">🔒</span>
+                </div>
                 <p className="text-gray-700 font-medium text-sm">Datenschutz nach DSGVO – sichere Verarbeitung auf EU-Servern</p>
               </div>
-              <div className="flex flex-col items-center gap-3 bg-white p-6 rounded-lg border border-gray-200 text-center">
-                <span className="text-2xl">✓</span>
+              <div className="flex flex-col items-center gap-4 bg-gradient-to-br from-amber-50 to-white p-6 rounded-xl border border-amber-200/50 text-center hover:shadow-md transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center">
+                  <span className="text-xl">👨‍⚕️</span>
+                </div>
                 <p className="text-gray-700 font-medium text-sm">Medizinisch validierte Auswertung durch Fachpersonal</p>
               </div>
-              <div className="flex flex-col items-center gap-3 bg-white p-6 rounded-lg border border-gray-200 text-center">
-                <span className="text-2xl">✓</span>
+              <div className="flex flex-col items-center gap-4 bg-gradient-to-br from-rose-50 to-white p-6 rounded-xl border border-rose-200/50 text-center hover:shadow-md transition-all duration-300 hover:scale-105">
+                <div className="w-12 h-12 bg-rose-100 rounded-full flex items-center justify-center">
+                  <span className="text-xl">🇩🇪</span>
+                </div>
                 <p className="text-gray-700 font-medium text-sm">Getestet in führenden deutschen Partnerlaboren</p>
               </div>
             </div>

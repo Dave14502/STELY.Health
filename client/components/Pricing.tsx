@@ -2,7 +2,7 @@ import { Check } from 'lucide-react';
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
+    <section id="pricing" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-white to-emerald-50/20 border-t border-gray-200">
       <div className="max-w-4xl mx-auto">
         <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-amber-100 via-amber-50 to-orange-50 p-12 mb-12">
           <img

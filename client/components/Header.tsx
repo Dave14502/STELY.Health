@@ -1,11 +1,21 @@
 import { useState } from 'react';
+import * as React from 'react';
 import { Menu, X } from 'lucide-react';
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 10);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   return (
-    <header className="w-full bg-white border-b border-gray-200">
+    <header className={`w-full sticky top-0 z-40 bg-white border-b border-gray-200 transition-shadow duration-300 ${isScrolled ? 'shadow-md' : ''}`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-black">
@@ -14,10 +24,22 @@ export default function Header() {
           
           {/* Desktop Menu */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#how-it-works" className="text-gray-700 hover:text-black transition">Wie es funktioniert</a>
-            <a href="#what-we-test" className="text-gray-700 hover:text-black transition">Was wir testen</a>
-            <a href="#pricing" className="text-gray-700 hover:text-black transition">Preisgestaltung</a>
-            <a href="#footer" className="text-gray-700 hover:text-black transition">Partner mit uns</a>
+            <a href="#how-it-works" className="text-gray-700 hover:text-black transition relative group">
+              Wie es funktioniert
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a href="#what-we-test" className="text-gray-700 hover:text-black transition relative group">
+              Was wir testen
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a href="#pricing" className="text-gray-700 hover:text-black transition relative group">
+              Preisgestaltung
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+            </a>
+            <a href="#footer" className="text-gray-700 hover:text-black transition relative group">
+              Partner mit uns
+              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span>
+            </a>
           </nav>
 
           {/* Desktop Buttons */}
