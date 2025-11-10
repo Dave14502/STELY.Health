@@ -4,7 +4,7 @@ export default function Pricing() {
   return (
     <section id="pricing" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
       <div className="max-w-4xl mx-auto">
-        <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-amber-100 via-amber-50 to-orange-50 p-12 mb-12">
+        <div className="rounded-2xl overflow-hidden bg-white border border-gray-200 shadow-sm p-12 mb-12">
           <img
             src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=400&fit=crop"
             alt="STELY-Produkt"
