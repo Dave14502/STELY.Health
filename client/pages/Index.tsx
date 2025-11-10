@@ -31,23 +31,23 @@ export default function Index() {
             {/* HSA/FSA Badge */}
             <div className="flex items-center justify-center gap-2 mb-6">
               <CheckCircle className="w-5 h-5 text-blue-500" />
-              <span className="text-sm font-semibold text-gray-700">HSA/FSA Eligible</span>
+              <span className="text-sm font-semibold text-gray-700">HSA/FSA berechtigt</span>
             </div>
 
             {/* Main Headline */}
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-center text-gray-900 mb-6">
-              Your Monthly Blood Test
+              Dein monatlicher Bluttest
             </h1>
 
             {/* Subheadline */}
             <p className="text-lg sm:text-xl text-center text-gray-600 mb-8 max-w-3xl mx-auto">
-              Every month. One comprehensive at-home test, free sample pickup, and actionable results in days. All for just <span className="font-bold">$79.</span>
+              Jeden Monat. Ein umfassender Test zu Hause, kostenlose Abholung und verwertbare Ergebnisse in Tagen. Alles für nur <span className="font-bold">$79.</span>
             </p>
 
             {/* CTA Button */}
             <div className="flex justify-center mb-12">
               <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-3 rounded-full transition shadow-lg hover:shadow-xl">
-                Get your first test
+                Hol dir deinen ersten Test
               </button>
             </div>
 
@@ -55,23 +55,23 @@ export default function Index() {
             <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 sm:gap-6 text-center">
               <div className="flex flex-col items-center gap-2">
                 <span className="text-2xl">✓</span>
-                <p className="text-xs sm:text-sm font-semibold text-gray-700">FDA CLEARED</p>
+                <p className="text-xs sm:text-sm font-semibold text-gray-700">FDA FREIGEGEBEN</p>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <span className="text-2xl">⚖️</span>
-                <p className="text-xs sm:text-sm font-semibold text-gray-700">HIPAA COMPLIANT</p>
+                <p className="text-xs sm:text-sm font-semibold text-gray-700">HIPAA-KONFORM</p>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <span className="text-2xl">📋</span>
-                <p className="text-xs sm:text-sm font-semibold text-gray-700">CLIA CERTIFIED</p>
+                <p className="text-xs sm:text-sm font-semibold text-gray-700">CLIA-ZERTIFIZIERT</p>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <span className="text-2xl">🏥</span>
-                <p className="text-xs sm:text-sm font-semibold text-gray-700">CAP ACCREDITED</p>
+                <p className="text-xs sm:text-sm font-semibold text-gray-700">CAP-AKKREDITIERT</p>
               </div>
               <div className="flex flex-col items-center gap-2">
                 <span className="text-2xl">✓</span>
-                <p className="text-xs sm:text-sm font-semibold text-gray-700">FDA CLEARED</p>
+                <p className="text-xs sm:text-sm font-semibold text-gray-700">FDA FREIGEGEBEN</p>
               </div>
             </div>
           </div>
@@ -89,12 +89,12 @@ export default function Index() {
       {/* FAQ Section */}
       <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-8">Frequently Asked Questions</h2>
+          <h2 className="text-4xl font-bold mb-8">Häufig gestellte Fragen</h2>
           <p className="text-gray-600 text-lg mb-8">
-            Have questions? Check out our FAQ or contact our support team.
+            Haben Sie Fragen? Schauen Sie sich unsere Häufig gestellten Fragen an oder wenden Sie sich an unser Support-Team.
           </p>
           <button className="bg-blue-500 hover:bg-blue-600 text-white font-semibold px-8 py-3 rounded-full transition">
-            View All FAQs
+            Alle Häufig gestellten Fragen anzeigen
           </button>
         </div>
       </section>

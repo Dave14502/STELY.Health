@@ -15,46 +15,46 @@ interface TestCategory {
 
 const testCategories: TestCategory[] = [
   {
-    title: 'Hormone Balance',
+    title: 'Hormonelles Gleichgewicht',
     icon: '⚖️',
     items: [
-      { id: '1', name: 'Estrogen (Estradiol E2)', icon: '♀️' },
-      { id: '2', name: 'Progesterone', icon: '♀️' },
+      { id: '1', name: 'Östrogen (Estradiol E2)', icon: '♀️' },
+      { id: '2', name: 'Progesteron', icon: '♀️' },
       { id: '3', name: 'SHBG', icon: '' },
-      { id: '4', name: 'TSH (Thyroid)', icon: '' },
-      { id: '5', name: 'Total & Free Testosterone', icon: '♂️' },
+      { id: '4', name: 'TSH (Schilddrüse)', icon: '' },
+      { id: '5', name: 'Gesamt- & freies Testosteron', icon: '♂️' },
     ],
   },
   {
-    title: 'Heart Health',
+    title: 'Herzgesundheit',
     icon: '❤️',
     items: [
       { id: '6', name: 'ApoB', icon: '' },
-      { id: '7', name: 'LDL Cholesterol', icon: '' },
-      { id: '8', name: 'CRP (Inflammation)', icon: '' },
-      { id: '9', name: 'HDL Cholesterol', icon: '' },
+      { id: '7', name: 'LDL-Cholesterin', icon: '' },
+      { id: '8', name: 'CRP (Entzündung)', icon: '' },
+      { id: '9', name: 'HDL-Cholesterin', icon: '' },
     ],
   },
   {
-    title: 'Metabolic Efficiency',
+    title: 'Stoffwechseleffizienz',
     icon: '🏥',
     items: [
-      { id: '10', name: 'Ferritin (Iron)', icon: '' },
+      { id: '10', name: 'Ferritin (Eisen)', icon: '' },
       { id: '11', name: 'Albumin', icon: '' },
-      { id: '12', name: 'Free T3 (Thyroid)', icon: '' },
+      { id: '12', name: 'Freies T3 (Schilddrüse)', icon: '' },
       { id: '13', name: 'Vitamin D', icon: '' },
-      { id: '14', name: 'Triglycerides', icon: '' },
-      { id: '15', name: 'LDL-C / ApoB (Particle Size)', icon: '' },
-      { id: '16', name: 'Triglycerides / HDL', icon: '' },
+      { id: '14', name: 'Triglyceride', icon: '' },
+      { id: '15', name: 'LDL-C / ApoB (Partikelgröße)', icon: '' },
+      { id: '16', name: 'Triglyceride / HDL', icon: '' },
     ],
   },
   {
-    title: 'Longevity',
+    title: 'Langlebigkeit',
     icon: '🎂',
     items: [
-      { id: '17', name: 'Biological Age', icon: '' },
-      { id: '18', name: 'Rythm Score', icon: '' },
-      { id: '19', name: 'Personalized Baselines', icon: '' },
+      { id: '17', name: 'Biologisches Alter', icon: '' },
+      { id: '18', name: 'Rythm-Punktzahl', icon: '' },
+      { id: '19', name: 'Personalisierte Baselines', icon: '' },
     ],
   },
 ];
@@ -73,7 +73,7 @@ export default function WhatWeTest() {
   return (
     <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
       <div className="max-w-4xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16">What we test every month</h2>
+        <h2 className="text-4xl font-bold text-center mb-16">Was wir jeden Monat testen</h2>
 
         <div className="space-y-4">
           {testCategories.map((category) => (

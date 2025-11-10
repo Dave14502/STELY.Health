@@ -11,34 +11,34 @@ export default function Pricing() {
             className="w-full h-64 object-cover rounded-xl mb-8"
           />
 
-          <h2 className="text-4xl font-bold text-center mb-2">The Rythm Membership</h2>
+          <h2 className="text-4xl font-bold text-center mb-2">Die Rythm-Mitgliedschaft</h2>
           <div className="text-center mb-8">
             <span className="text-4xl font-bold text-gray-900">$79</span>
-            <span className="text-gray-600 ml-2">/mo</span>
-            <p className="text-sm text-gray-600 mt-2">+ shipping & handling</p>
+            <span className="text-gray-600 ml-2">/Monat</span>
+            <p className="text-sm text-gray-600 mt-2">+ Versand & Bearbeitung</p>
           </div>
 
           <button className="w-full bg-gray-900 text-white py-4 rounded-lg font-semibold hover:bg-black transition mb-4">
-            Get your first test
+            Hol dir deinen ersten Test
           </button>
 
           <p className="text-center text-sm text-gray-600 space-y-1">
-            <span className="block">Billed per test</span>
-            <span className="block">HSA/FSA eligible</span>
-            <span className="block">Skip or cancel anytime</span>
+            <span className="block">Pro Test abgerechnet</span>
+            <span className="block">HSA/FSA berechtigt</span>
+            <span className="block">Jederzeit überspringen oder kündigen</span>
           </p>
         </div>
 
         {/* What's Included */}
         <div>
-          <h3 className="text-2xl font-bold mb-6 text-gray-900">What's Included</h3>
+          <h3 className="text-2xl font-bold mb-6 text-gray-900">Was ist enthalten</h3>
           <div className="space-y-4">
             {[
-              'A new Rythm test every month',
-              'Fast shipping',
-              'Free Sample pick up service',
-              'Fast, human customer service',
-              'Rythm perks',
+              'Ein neuer Rythm-Test jeden Monat',
+              'Schneller Versand',
+              'Kostenloser Probenabholservice',
+              'Schneller, menschlicher Kundenservice',
+              'Rythm-Vorteile',
             ].map((item, index) => (
               <div key={index} className="flex items-center gap-3">
                 <div className="w-6 h-6 rounded-full bg-gray-900 text-white flex items-center justify-center flex-shrink-0">

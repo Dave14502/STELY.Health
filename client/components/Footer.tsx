@@ -26,30 +26,30 @@ export default function Footer() {
 
           {/* Company Links */}
           <div>
-            <h4 className="font-semibold mb-4">Company</h4>
+            <h4 className="font-semibold mb-4">Unternehmen</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition">Member login</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition">Careers</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition">Creator Partnerships</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition">Mitglieder-Login</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition">Karrieren</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition">Creator-Partnerschaften</a></li>
             </ul>
           </div>
 
           {/* Partnerships */}
           <div>
-            <h4 className="font-semibold mb-4">Partnerships</h4>
+            <h4 className="font-semibold mb-4">Partnerschaften</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition">Practitioner Partnerships</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition">General Partnerships</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition">Fachleute-Partnerschaften</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition">Allgemeine Partnerschaften</a></li>
             </ul>
           </div>
 
           {/* Legal */}
           <div>
-            <h4 className="font-semibold mb-4">Legal</h4>
+            <h4 className="font-semibold mb-4">Rechtlich</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition">Refund and Skip Policy</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition">Terms and Conditions</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition">Privacy Policy</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition">Rückerstattungs- und Übersprungrichtlinie</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition">Allgemeine Geschäftsbedingungen</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition">Datenschutzrichtlinie</a></li>
             </ul>
           </div>
         </div>
@@ -57,7 +57,7 @@ export default function Footer() {
         {/* Disclaimer */}
         <div className="border-t border-gray-700 pt-8 mt-8">
           <p className="text-gray-400 text-sm leading-relaxed">
-            Rythm Health is a Healthcare Technology Company and not a Laboratory or Medical Provider. All laboratory and medical services are provided by independent third parties. These laboratory and medical service providers set their own pricing. Although Rythm Health may facilitate easy access to certain laboratory and medical service providers on your behalf, Rythm Health does not recommend or refer you to any healthcare providers, and you are free to choose any healthcare provider and to continue to use Rythm Health's services.
+            Rythm Health ist ein Gesundheitstechnologieunternehmen und keine Laboratoriums- oder Arztpraxis. Alle Labor- und medizinischen Dienste werden von unabhängigen Drittanbietern bereitgestellt. Diese Labor- und medizinischen Dienstleister legen ihre eigenen Preise fest. Obwohl Rythm Health möglicherweise einen einfachen Zugang zu bestimmten Labor- und medizinischen Dienstleistern in Ihrem Namen erleichtert, empfiehlt Rythm Health Sie nicht an Gesundheitsdienstleister weiter oder verweist Sie nicht an diese, und Sie können frei einen Gesundheitsdienstleister wählen und Rythm Health's Services weiterhin nutzen.
           </p>
         </div>
       </div>

@@ -14,21 +14,21 @@ const testimonials: Testimonial[] = [
     id: 1,
     name: 'Matt Rabasco',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
-    quote: 'Rythm is a great option to keep track of your health metrics at within 7 days. The experience is revolutionary and all the testing remains hospital-grade testing.',
+    quote: 'Rythm ist eine großartige Option, um deine Gesundheitsmetriken innerhalb von 7 Tagen im Auge zu behalten. Das Erlebnis ist revolutionär und alle Tests bleiben auf Krankenhauspflege-Niveau.',
     rating: 5,
   },
   {
     id: 2,
     name: 'Sarah Johnson',
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
-    quote: 'I was dragging through the day, no matter how much I rested. Rythm flagged low Free T3. After a few tweaks, my energy\'s solid.',
+    quote: 'Ich war den ganzen Tag schlecht drauf, egal wie viel ich ruhte. Rythm erkannte niedriges freies T3. Nach ein paar Anpassungen ist meine Energie stabil.',
     rating: 5,
   },
   {
     id: 3,
     name: 'James A',
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop',
-    quote: 'I assumed my low mood and lack of libido were just part of a busy life. But Rythm helped me uncover a hormone imbalance.',
+    quote: 'Ich dachte, meine schlechte Laune und mangelnde Libido seien einfach Teil eines arbeitsreichen Lebens. Aber Rythm half mir, ein Hormonungleichgewicht zu entdecken.',
     rating: 5,
   },
 ];
@@ -49,7 +49,7 @@ export default function Testimonials() {
   return (
     <section className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
       <div className="max-w-5xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12">What customers say</h2>
+        <h2 className="text-4xl font-bold text-center mb-12">Was Kunden sagen</h2>
 
         <div className="flex items-center justify-between gap-8">
           <button

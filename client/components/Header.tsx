@@ -14,10 +14,10 @@ export default function Header() {
           
           {/* Desktop Menu */}
           <nav className="hidden md:flex items-center gap-8">
-            <a href="#" className="text-gray-700 hover:text-black transition">About</a>
-            <a href="#" className="text-gray-700 hover:text-black transition">How It Works</a>
-            <a href="#" className="text-gray-700 hover:text-black transition">Pricing</a>
-            <a href="#" className="text-gray-700 hover:text-black transition">FAQ</a>
+            <a href="#" className="text-gray-700 hover:text-black transition">Über</a>
+            <a href="#" className="text-gray-700 hover:text-black transition">So funktioniert es</a>
+            <a href="#" className="text-gray-700 hover:text-black transition">Preise</a>
+            <a href="#" className="text-gray-700 hover:text-black transition">Häufig gestellte Fragen</a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -36,10 +36,10 @@ export default function Header() {
         {/* Mobile Menu */}
         {menuOpen && (
           <nav className="md:hidden mt-4 flex flex-col gap-4">
-            <a href="#" className="text-gray-700 hover:text-black transition">About</a>
-            <a href="#" className="text-gray-700 hover:text-black transition">How It Works</a>
-            <a href="#" className="text-gray-700 hover:text-black transition">Pricing</a>
-            <a href="#" className="text-gray-700 hover:text-black transition">FAQ</a>
+            <a href="#" className="text-gray-700 hover:text-black transition">Über</a>
+            <a href="#" className="text-gray-700 hover:text-black transition">So funktioniert es</a>
+            <a href="#" className="text-gray-700 hover:text-black transition">Preise</a>
+            <a href="#" className="text-gray-700 hover:text-black transition">Häufig gestellte Fragen</a>
           </nav>
         )}
       </div>
