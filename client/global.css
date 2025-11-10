@@ -104,7 +104,8 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-white text-gray-900;
+    font-family: 'Inter', sans-serif;
   }
 
   :where(p, span, li, h1, h2, h3, h4, h5, h6, a, button, label, td, th) {
@@ -116,5 +117,9 @@
   code {
     overflow-x: auto;
     white-space: pre;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold;
   }
 }
