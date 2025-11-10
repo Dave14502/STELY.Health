@@ -67,7 +67,7 @@ export default function WhatWeTest() {
   };
 
   return (
-    <section id="what-we-test" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-gray-50 to-white border-t border-gray-200">
+    <section id="what-we-test" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-5xl font-bold text-center mb-16">Was wir jeden Monat testen</h2>
 
