@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import Header from '@/components/Header';
 import HowItWorks from '@/components/HowItWorks';
 import WhatWeTest from '@/components/WhatWeTest';
@@ -6,8 +7,11 @@ import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
 import CookieConsent from '@/components/CookieConsent';
+import WaitlistModal from '@/components/WaitlistModal';
 
 export default function Index() {
+  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
+
   return (
     <div className="w-full bg-white">
       <Header />
@@ -88,6 +92,7 @@ export default function Index() {
 
       <Footer />
       <CookieConsent />
+      <WaitlistModal isOpen={isWaitlistOpen} onClose={() => setIsWaitlistOpen(false)} />
     </div>
   );
 }
