@@ -57,34 +57,6 @@ export default function Index() {
           </div>
         </div>
 
-        {/* Compliance Badges */}
-        <div className="w-full bg-white border-t border-gray-200 px-4 sm:px-6 lg:px-8 py-12">
-          <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-2 sm:grid-cols-5 gap-8 text-center">
-              <div className="flex flex-col items-center gap-3">
-                <span className="text-2xl">✓</span>
-                <p className="text-sm font-semibold text-gray-700">HIPAA-KONFORM</p>
-              </div>
-              <div className="flex flex-col items-center gap-3">
-                <span className="text-2xl">✓</span>
-                <p className="text-sm font-semibold text-gray-700">CLIA-ZERTIFIZIERT</p>
-              </div>
-              <div className="flex flex-col items-center gap-3">
-                <span className="text-2xl">✓</span>
-                <p className="text-sm font-semibold text-gray-700">CAP-AKKREDITIERT</p>
-              </div>
-              <div className="flex flex-col items-center gap-3">
-                <span className="text-2xl">✓</span>
-                <p className="text-sm font-semibold text-gray-700">FDA-FREIGEGEBEN</p>
-              </div>
-              <div className="flex flex-col items-center gap-3">
-                <span className="text-2xl">✓</span>
-                <p className="text-sm font-semibold text-gray-700">HIPAA-KONFORM</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         {/* EU Validation Section */}
         <div className="w-full bg-gray-50 border-t border-gray-200 px-4 sm:px-6 lg:px-8 py-16">
           <div className="max-w-4xl mx-auto">
