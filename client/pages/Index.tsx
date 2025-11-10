@@ -59,27 +59,27 @@ export default function Index() {
 
         {/* EU Validation Section */}
         <div className="w-full bg-gray-50 border-t border-gray-200 px-4 sm:px-6 lg:px-8 py-16">
-          <div className="max-w-4xl mx-auto">
-            <div className="space-y-4">
-              <div className="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
-                <span className="text-2xl flex-shrink-0">✓</span>
-                <p className="text-gray-700 font-medium">CE-gekennzeichnetes Testkit nach EU-IVDR</p>
+          <div className="max-w-7xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-4">
+              <div className="flex flex-col items-center gap-3 bg-white p-6 rounded-lg border border-gray-200 text-center">
+                <span className="text-2xl">✓</span>
+                <p className="text-gray-700 font-medium text-sm">CE-gekennzeichnetes Testkit nach EU-IVDR</p>
               </div>
-              <div className="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
-                <span className="text-2xl flex-shrink-0">✓</span>
-                <p className="text-gray-700 font-medium">Analyse in DAkkS-akkreditiertem Labor (DIN EN ISO 15189)</p>
+              <div className="flex flex-col items-center gap-3 bg-white p-6 rounded-lg border border-gray-200 text-center">
+                <span className="text-2xl">✓</span>
+                <p className="text-gray-700 font-medium text-sm">Analyse in DAkkS-akkreditiertem Labor (DIN EN ISO 15189)</p>
               </div>
-              <div className="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
-                <span className="text-2xl flex-shrink-0">✓</span>
-                <p className="text-gray-700 font-medium">Datenschutz nach DSGVO – sichere Verarbeitung auf EU-Servern</p>
+              <div className="flex flex-col items-center gap-3 bg-white p-6 rounded-lg border border-gray-200 text-center">
+                <span className="text-2xl">✓</span>
+                <p className="text-gray-700 font-medium text-sm">Datenschutz nach DSGVO – sichere Verarbeitung auf EU-Servern</p>
               </div>
-              <div className="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
-                <span className="text-2xl flex-shrink-0">✓</span>
-                <p className="text-gray-700 font-medium">Medizinisch validierte Auswertung durch Fachpersonal</p>
+              <div className="flex flex-col items-center gap-3 bg-white p-6 rounded-lg border border-gray-200 text-center">
+                <span className="text-2xl">✓</span>
+                <p className="text-gray-700 font-medium text-sm">Medizinisch validierte Auswertung durch Fachpersonal</p>
               </div>
-              <div className="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
-                <span className="text-2xl flex-shrink-0">✓</span>
-                <p className="text-gray-700 font-medium">Getestet in führenden deutschen Partnerlaboren</p>
+              <div className="flex flex-col items-center gap-3 bg-white p-6 rounded-lg border border-gray-200 text-center">
+                <span className="text-2xl">✓</span>
+                <p className="text-gray-700 font-medium text-sm">Getestet in führenden deutschen Partnerlaboren</p>
               </div>
             </div>
           </div>
