@@ -84,6 +84,35 @@ export default function Index() {
             </div>
           </div>
         </div>
+
+        {/* EU Validation Section */}
+        <div className="w-full bg-gray-50 border-t border-gray-200 px-4 sm:px-6 lg:px-8 py-16">
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-2xl font-bold text-center text-gray-900 mb-12">Validierung & Zertifizierungen</h3>
+            <div className="space-y-4">
+              <div className="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+                <span className="text-2xl flex-shrink-0">✓</span>
+                <p className="text-gray-700 font-medium">CE-gekennzeichnetes Testkit nach EU-IVDR</p>
+              </div>
+              <div className="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+                <span className="text-2xl flex-shrink-0">✓</span>
+                <p className="text-gray-700 font-medium">Analyse in DAkkS-akkreditiertem Labor (DIN EN ISO 15189)</p>
+              </div>
+              <div className="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+                <span className="text-2xl flex-shrink-0">✓</span>
+                <p className="text-gray-700 font-medium">Datenschutz nach DSGVO – sichere Verarbeitung auf EU-Servern</p>
+              </div>
+              <div className="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+                <span className="text-2xl flex-shrink-0">✓</span>
+                <p className="text-gray-700 font-medium">Medizinisch validierte Auswertung durch Fachpersonal</p>
+              </div>
+              <div className="flex items-start gap-4 bg-white p-6 rounded-lg border border-gray-200">
+                <span className="text-2xl flex-shrink-0">✓</span>
+                <p className="text-gray-700 font-medium">Getestet in führenden deutschen Partnerlaboren</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* All Sections */}
