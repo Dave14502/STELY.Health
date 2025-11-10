@@ -1,12 +1,11 @@
-import { CheckCircle } from 'lucide-react';
 import Header from '@/components/Header';
 import HowItWorks from '@/components/HowItWorks';
 import WhatWeTest from '@/components/WhatWeTest';
-import Testimonials from '@/components/Testimonials';
 import WayBetter from '@/components/WayBetter';
 import Pricing from '@/components/Pricing';
 import FAQ from '@/components/FAQ';
 import Footer from '@/components/Footer';
+import CookieConsent from '@/components/CookieConsent';
 
 export default function Index() {
   return (
@@ -19,12 +18,6 @@ export default function Index() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left Content */}
             <div>
-              {/* HSA/FSA Badge */}
-              <div className="flex items-center gap-2 mb-8">
-                <CheckCircle className="w-5 h-5 text-blue-500" />
-                <span className="text-sm font-semibold text-gray-700">HSA/FSA berechtigt</span>
-              </div>
-
               {/* Main Headline */}
               <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6 leading-tight">
                 Monatlich macht Sinn mit dem einfachsten Bluttest der Welt
@@ -89,12 +82,12 @@ export default function Index() {
       {/* All Sections */}
       <HowItWorks />
       <WhatWeTest />
-      <Testimonials />
       <WayBetter />
       <Pricing />
       <FAQ />
 
       <Footer />
+      <CookieConsent />
     </div>
   );
 }
