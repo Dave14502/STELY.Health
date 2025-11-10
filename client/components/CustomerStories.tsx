@@ -18,9 +18,9 @@ export default function CustomerStories() {
             </div>
             <div className="flex justify-between text-xs text-gray-500 mt-2">
               <span>Sep</span>
-              <span>Oct</span>
+              <span>Okt</span>
               <span>Nov</span>
-              <span>Dec</span>
+              <span>Dez</span>
             </div>
           </div>
 
@@ -37,9 +37,9 @@ export default function CustomerStories() {
             </div>
             <div className="flex justify-between text-xs text-gray-500 mt-2">
               <span>Sep</span>
-              <span>Oct</span>
+              <span>Okt</span>
               <span>Nov</span>
-              <span>Dec</span>
+              <span>Dez</span>
             </div>
           </div>
 
@@ -56,9 +56,9 @@ export default function CustomerStories() {
             </div>
             <div className="flex justify-between text-xs text-gray-500 mt-2">
               <span>Sep</span>
-              <span>Oct</span>
+              <span>Okt</span>
               <span>Nov</span>
-              <span>Dec</span>
+              <span>Dez</span>
             </div>
           </div>
         </div>
