@@ -83,10 +83,16 @@ export default function Header({ onOpenWaitlist }: HeaderProps) {
             <a href="#pricing" className="text-gray-700 hover:text-black transition">Preisgestaltung</a>
             <a href="#footer" className="text-gray-700 hover:text-black transition">Partner mit uns</a>
             <hr className="my-2" />
-            <button className="text-left text-gray-700 hover:text-black transition font-medium">
+            <button
+              onClick={onOpenWaitlist}
+              className="text-left text-gray-700 hover:text-black transition font-medium"
+            >
               Anmelden
             </button>
-            <button className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-900 transition font-medium text-left">
+            <button
+              onClick={onOpenWaitlist}
+              className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-900 transition font-medium text-left"
+            >
               STELY erhalten
             </button>
           </nav>
