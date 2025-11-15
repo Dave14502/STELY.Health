@@ -27,7 +27,7 @@ export default function HowItWorks() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {steps.map((step) => (
-            <div key={step.number} className="flex flex-col items-center">
+            <div key={step.number} className="flex flex-col items-center p-4 border border-gray-200 rounded-lg bg-gray-50">
               {/* Step Number */}
               <div className="w-10 h-10 rounded-full border-2 border-blue-500 flex items-center justify-center text-blue-500 font-semibold text-sm mb-3">
                 {step.number}
@@ -39,7 +39,7 @@ export default function HowItWorks() {
               </h3>
 
               {/* Step Image */}
-              <div className="w-full rounded-lg overflow-hidden bg-gray-100 h-48 flex items-center justify-center">
+              <div className="w-full rounded-md overflow-hidden bg-white h-48 flex items-center justify-center">
                 <img
                   src={step.image}
                   alt={step.alt}
