@@ -10,7 +10,7 @@ export default function Pricing({ onOpenWaitlist }: PricingProps) {
       <div className="max-w-4xl mx-auto">
         <div className="rounded-2xl overflow-hidden bg-white border border-gray-200 shadow-sm p-12 mb-12">
           <img
-            src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=400&fit=crop"
+            src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fe68beefb6f194086a94ad4f680f90310?format=webp&width=800"
             alt="STELY-Produkt"
             className="w-full h-64 object-cover rounded-xl mb-8"
           />
