@@ -21,25 +21,25 @@ export default function HowItWorks() {
   ];
 
   return (
-    <section id="how-it-works" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-bold text-center mb-16">Wie es funktioniert</h2>
+    <section id="how-it-works" className="w-full py-16 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
+      <div className="max-w-6xl mx-auto">
+        <h2 className="text-4xl sm:text-5xl font-bold text-center mb-12">Wie es funktioniert</h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {steps.map((step) => (
             <div key={step.number} className="flex flex-col items-center">
               {/* Step Number */}
-              <div className="w-12 h-12 rounded-full border-2 border-blue-500 flex items-center justify-center text-blue-500 font-semibold text-lg mb-4">
+              <div className="w-10 h-10 rounded-full border-2 border-blue-500 flex items-center justify-center text-blue-500 font-semibold text-sm mb-3">
                 {step.number}
               </div>
 
               {/* Step Title */}
-              <h3 className="text-lg font-semibold text-blue-500 text-center mb-6">
+              <h3 className="text-base font-semibold text-blue-500 text-center mb-4">
                 {step.title}
               </h3>
 
               {/* Step Image */}
-              <div className="w-full rounded-2xl overflow-hidden bg-gray-100 aspect-square flex items-center justify-center">
+              <div className="w-full rounded-lg overflow-hidden bg-gray-100 h-48 flex items-center justify-center">
                 <img
                   src={step.image}
                   alt={step.alt}
