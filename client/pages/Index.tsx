@@ -49,7 +49,7 @@ export default function Index() {
             {/* Right Image */}
             <div className="flex justify-center">
               <img
-                src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=600&fit=crop"
+                src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fc1d22e5a8bc046eba05dd0a959880b63?format=webp&width=800"
                 alt="STELY Bluttest-Kit"
                 className="w-full h-auto rounded-2xl object-cover"
               />
