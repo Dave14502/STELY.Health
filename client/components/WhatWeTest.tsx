@@ -57,47 +57,50 @@ const testCategories: TestCategory[] = [
 ];
 
 export default function WhatWeTest() {
-  const [expandedCategories, setExpandedCategories] = useState<string[]>([]);
+  const [expandedItems, setExpandedItems] = useState<string[]>([]);
 
-  const toggleCategory = (title: string) => {
-    setExpandedCategories(prev =>
-      prev.includes(title)
-        ? prev.filter(t => t !== title)
-        : [...prev, title]
+  const toggleItem = (id: string) => {
+    setExpandedItems(prev =>
+      prev.includes(id)
+        ? prev.filter(item => item !== id)
+        : [...prev, id]
     );
   };
 
   return (
     <section id="what-we-test" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
         <h2 className="text-5xl font-bold text-center mb-16">Was wir jeden Monat testen</h2>
 
-        <div className="space-y-4">
+        <div className="space-y-12">
           {testCategories.map((category) => (
-            <div key={category.title} className="border border-gray-200 rounded-lg overflow-hidden">
-              <button
-                onClick={() => toggleCategory(category.title)}
-                className="w-full px-6 py-4 flex items-center justify-between bg-white hover:bg-gray-50 transition"
-              >
-                <h3 className="text-lg font-semibold text-black">{category.title}</h3>
-                {expandedCategories.includes(category.title) ? (
-                  <Minus className="w-5 h-5 text-gray-400" />
-                ) : (
-                  <Plus className="w-5 h-5 text-gray-400" />
-                )}
-              </button>
+            <div key={category.title}>
+              <h3 className="text-2xl font-semibold text-center mb-6 text-gray-900">{category.title}</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {category.items.map((item) => (
+                  <div key={item.id} className="border border-gray-200 rounded-lg overflow-hidden bg-white hover:border-gray-300 transition">
+                    <button
+                      onClick={() => toggleItem(item.id)}
+                      className="w-full px-4 py-3 flex items-center justify-between hover:bg-gray-50 transition"
+                    >
+                      <span className="text-sm font-medium text-gray-900">{item.name}</span>
+                      {expandedItems.includes(item.id) ? (
+                        <Minus className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                      ) : (
+                        <Plus className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                      )}
+                    </button>
 
-              {expandedCategories.includes(category.title) && (
-                <div className="px-6 py-4 bg-gray-50 border-t border-gray-200">
-                  <ul className="space-y-3">
-                    {category.items.map((item) => (
-                      <li key={item.id} className="text-gray-700">
-                        {item.name}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
+                    {expandedItems.includes(item.id) && (
+                      <div className="px-4 py-3 bg-gray-50 border-t border-gray-200">
+                        <p className="text-sm text-gray-700 leading-relaxed">
+                          {item.description}
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
