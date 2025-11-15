@@ -9,7 +9,7 @@ export default function HowItWorks() {
     {
       number: 2,
       title: "Sende deine Probe",
-      image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&h=600&fit=crop",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fd64d3967479e42ac847590a4cd5c0967?format=webp&width=800",
       alt: "Sende deine Probe"
     },
     {
