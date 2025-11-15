@@ -15,7 +15,7 @@ export default function HowItWorks() {
     {
       number: 3,
       title: "Ergebnisse in Tagen erhalten",
-      image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fadad71577d2c4fcc8b20831845929acf?format=webp&width=800",
       alt: "Ergebnisse in Tagen erhalten"
     }
   ];
