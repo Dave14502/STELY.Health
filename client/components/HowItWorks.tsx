@@ -2,28 +2,28 @@ export default function HowItWorks() {
   const steps = [
     {
       number: 1,
-      title: "Collect from home",
+      title: "Probe zu Hause sammeln",
       image: "https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2F23ee8aa84d2a4bf2b2c0ae7ebc037eaa?format=webp&width=800",
-      alt: "Collect from home"
+      alt: "Probe zu Hause sammeln"
     },
     {
       number: 2,
-      title: "Send your sample",
+      title: "Sende deine Probe",
       image: "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=800&h=600&fit=crop",
-      alt: "Send your sample"
+      alt: "Sende deine Probe"
     },
     {
       number: 3,
-      title: "Get results in days",
+      title: "Ergebnisse in Tagen erhalten",
       image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=600&fit=crop",
-      alt: "Get results in days"
+      alt: "Ergebnisse in Tagen erhalten"
     }
   ];
 
   return (
     <section id="how-it-works" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-5xl font-bold text-center mb-16">How it works</h2>
+        <h2 className="text-5xl font-bold text-center mb-16">Wie es funktioniert</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step) => (
