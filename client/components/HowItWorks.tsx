@@ -3,7 +3,7 @@ export default function HowItWorks() {
     {
       number: 1,
       title: "Probe zu Hause sammeln",
-      image: "https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2F23ee8aa84d2a4bf2b2c0ae7ebc037eaa?format=webp&width=800",
+      image: "https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fa45689e701334367a30714c49da70164?format=webp&width=800",
       alt: "Probe zu Hause sammeln"
     },
     {
