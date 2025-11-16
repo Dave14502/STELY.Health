@@ -10,6 +10,7 @@ interface TestItem {
 
 interface TestCategory {
   title: string;
+  icon: typeof Scale;
   items: TestItem[];
 }
 
