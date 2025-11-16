@@ -11,7 +11,7 @@ export default function WayBetter() {
             <h3 className="text-2xl lg:text-3xl font-bold text-center mb-8 text-gray-900">Wie 10x weniger.</h3>
             <div className="w-full h-80 lg:h-96 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center overflow-hidden">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2F25792850322d4b9a9ed606a74d2e2f2c?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fa33e2fb636ae493a8a2cef082fb156dc?format=webp&width=800"
                 alt="Viel weniger Blut"
                 className="w-full h-full object-contain"
               />
