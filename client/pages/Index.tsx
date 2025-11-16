@@ -111,8 +111,8 @@ export default function Index() {
                 <p className="text-gray-700 font-medium text-sm text-center">CE-gekennzeichnetes Testkit nach EU-IVDR</p>
               </div>
               <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1zm0 5c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm7.46-2.89c-.39-.39-1.02-.39-1.41 0l-1.41 1.41c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.41-1.41c.38-.39.38-1.02 0-1.41zM5.95 5.11L4.54 6.52c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.41-1.41c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0zM1 12c-.55 0-1 .45-1 1s.45 1 1 1h2c.55 0 1-.45 1-1s-.45-1-1-1H1zm20 0c-.55 0-1 .45-1 1s.45 1 1 1h2c.55 0 1-.45 1-1s-.45-1-1-1h-2zm-1.46 4.89l1.41 1.41c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41l-1.41-1.41c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41zM6.96 18.9l1.41 1.41c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41l-1.41-1.41c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41z" />
+                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                  <path d="M8 18h8m-4-8c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3m0 2v2m-2-2h4v2h-4m-2 2h8c.55 0 1 .45 1 1v3c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-3c0-.55.45-1 1-1m1 3h6v-2H8v2m6-6l2-2m-8 2l-2-2" />
                 </svg>
                 <p className="text-gray-700 font-medium text-sm text-center">Analyse in deutschen Partnerlaboren</p>
               </div>
@@ -138,8 +138,8 @@ export default function Index() {
                 <p className="text-gray-700 font-medium text-sm text-center">CE-gekennzeichnetes Testkit nach EU-IVDR</p>
               </div>
               <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 1c-.55 0-1 .45-1 1v2c0 .55.45 1 1 1s1-.45 1-1V2c0-.55-.45-1-1-1zm0 5c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 2c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2zm7.46-2.89c-.39-.39-1.02-.39-1.41 0l-1.41 1.41c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.41-1.41c.38-.39.38-1.02 0-1.41zM5.95 5.11L4.54 6.52c-.39.39-.39 1.02 0 1.41.39.39 1.02.39 1.41 0l1.41-1.41c.39-.39.39-1.02 0-1.41-.39-.39-1.02-.39-1.41 0zM1 12c-.55 0-1 .45-1 1s.45 1 1 1h2c.55 0 1-.45 1-1s-.45-1-1-1H1zm20 0c-.55 0-1 .45-1 1s.45 1 1 1h2c.55 0 1-.45 1-1s-.45-1-1-1h-2zm-1.46 4.89l1.41 1.41c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41l-1.41-1.41c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41zM6.96 18.9l1.41 1.41c.39.39 1.02.39 1.41 0 .39-.39.39-1.02 0-1.41l-1.41-1.41c-.39-.39-1.02-.39-1.41 0-.39.39-.39 1.02 0 1.41z" />
+                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
+                  <path d="M8 18h8m-4-8c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3m0 2v2m-2-2h4v2h-4m-2 2h8c.55 0 1 .45 1 1v3c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-3c0-.55.45-1 1-1m1 3h6v-2H8v2m6-6l2-2m-8 2l-2-2" />
                 </svg>
                 <p className="text-gray-700 font-medium text-sm text-center">Analyse in deutschen Partnerlaboren</p>
               </div>
