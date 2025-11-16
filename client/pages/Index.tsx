@@ -49,7 +49,7 @@ export default function Index() {
                 Jetzt starten
               </button>
               <p className="text-sm text-gray-600">
-                Inklusive CE-zertifiziertem Bluttest und Auswertung durch EU-Labore
+                CE-zertifiziert, EU-Labore, monatlich
               </p>
             </div>
 
