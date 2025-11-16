@@ -120,8 +120,8 @@ export default function Index() {
                 <p className="text-gray-700 font-medium text-sm text-center">Datenschutz nach DSGVO mit EU-Servern</p>
               </div>
               <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2-8a2 2 0 11-4 0 2 2 0 014 0zM7 20H5a2 2 0 01-2-2V9a2 2 0 012-2h14a2 2 0 012 2v9a2 2 0 01-2 2h-2m-2-3H9" />
+                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9h-2.5v2.5h-2v-2.5H8v-2h2.5V8h2v2.5h2.5v2z" />
                 </svg>
                 <p className="text-gray-700 font-medium text-sm text-center">Medizinisch geprüfte und klar erklärte Ergebnisse</p>
               </div>
@@ -146,8 +146,8 @@ export default function Index() {
                 <p className="text-gray-700 font-medium text-sm text-center">Datenschutz nach DSGVO mit EU-Servern</p>
               </div>
               <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2-8a2 2 0 11-4 0 2 2 0 014 0zM7 20H5a2 2 0 01-2-2V9a2 2 0 012-2h14a2 2 0 012 2v9a2 2 0 01-2 2h-2m-2-3H9" />
+                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9h-2.5v2.5h-2v-2.5H8v-2h2.5V8h2v2.5h2.5v2z" />
                 </svg>
                 <p className="text-gray-700 font-medium text-sm text-center">Medizinisch geprüfte und klar erklärte Ergebnisse</p>
               </div>
