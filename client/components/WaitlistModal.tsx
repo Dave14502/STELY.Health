@@ -27,7 +27,7 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
         },
         body: new URLSearchParams({
           "form-name": "waitlist",
-          "email": email,
+          email: email,
         }).toString(),
       });
 
