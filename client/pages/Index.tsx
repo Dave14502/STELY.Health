@@ -108,8 +108,8 @@ export default function Index() {
                 <p className="text-gray-700 font-medium text-sm text-center">CE-gekennzeichnetes Testkit nach EU-IVDR</p>
               </div>
               <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10h8M13 10L5.5 2M13 10l7.5 8M5.5 2h3m0 0V1m0 1v3m0 5h8m-3 2V4" />
+                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm0 3c-.551 0-1 .449-1 1s.449 1 1 1 1-.449 1-1-.449-1-1-1zm-2 3h4c.552 0 1 .448 1 1v2h2c.552 0 1 .448 1 1v7c0 .552-.448 1-1 1h-10c-.552 0-1-.448-1-1v-7c0-.552.448-1 1-1h2v-2c0-.552.448-1 1-1zm1 2v2h2v-2h-2zm-3 3h8v6h-8v-6z" />
                 </svg>
                 <p className="text-gray-700 font-medium text-sm text-center">Analyse in deutschen Partnerlaboren</p>
               </div>
@@ -134,8 +134,8 @@ export default function Index() {
                 <p className="text-gray-700 font-medium text-sm text-center">CE-gekennzeichnetes Testkit nach EU-IVDR</p>
               </div>
               <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10h8M13 10L5.5 2M13 10l7.5 8M5.5 2h3m0 0V1m0 1v3m0 5h8m-3 2V4" />
+                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2c-1.104 0-2 .896-2 2s.896 2 2 2 2-.896 2-2-.896-2-2-2zm0 3c-.551 0-1 .449-1 1s.449 1 1 1 1-.449 1-1-.449-1-1-1zm-2 3h4c.552 0 1 .448 1 1v2h2c.552 0 1 .448 1 1v7c0 .552-.448 1-1 1h-10c-.552 0-1-.448-1-1v-7c0-.552.448-1 1-1h2v-2c0-.552.448-1 1-1zm1 2v2h2v-2h-2zm-3 3h8v6h-8v-6z" />
                 </svg>
                 <p className="text-gray-700 font-medium text-sm text-center">Analyse in deutschen Partnerlaboren</p>
               </div>
