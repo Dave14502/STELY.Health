@@ -64,65 +64,67 @@ export default function Index() {
           </div>
         </div>
 
-        {/* EU Validation Section */}
+        {/* Validation Carousel Section */}
         <style>{`
-          @keyframes slideWave {
-            0% { transform: translateX(-100%); opacity: 0; }
-            10% { opacity: 1; }
-            90% { opacity: 1; }
-            100% { transform: translateX(100%); opacity: 0; }
+          .carousel-container {
+            display: flex;
+            gap: 1.5rem;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 0.5rem 0;
+            scrollbar-width: none;
           }
-          .animate-slide-wave {
-            animation: slideWave 8s ease-in-out infinite;
+          .carousel-container::-webkit-scrollbar {
+            display: none;
           }
-          .animate-slide-wave-1 { animation-delay: 0s; }
-          .animate-slide-wave-2 { animation-delay: 1s; }
-          .animate-slide-wave-3 { animation-delay: 2s; }
-          .animate-slide-wave-4 { animation-delay: 3s; }
-          .animate-slide-wave-5 { animation-delay: 4s; }
+          .carousel-item {
+            flex: 0 0 auto;
+            width: 260px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.5rem;
+          }
+          @media (max-width: 768px) {
+            .carousel-item {
+              width: 220px;
+            }
+          }
         `}</style>
-        <div className="w-full bg-white border-t border-gray-200 px-4 sm:px-6 lg:px-8 py-16 overflow-hidden">
+        <div className="w-full bg-white border-t border-gray-200 px-4 sm:px-6 lg:px-8 py-6">
           <div className="max-w-7xl mx-auto">
-            <div className="flex justify-center gap-6 md:gap-12 min-h-32">
-              <div className="flex flex-col items-center gap-3 animate-slide-wave animate-slide-wave-1 absolute md:relative">
-                <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="carousel-container">
+              <div className="carousel-item">
+                <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7 12a5 5 0 1110 0A5 5 0 017 12z" />
                   </svg>
                 </div>
-                <p className="text-gray-700 font-medium text-sm text-center max-w-40">CE-gekennzeichnetes Testkit nach EU-IVDR</p>
+                <p className="text-gray-700 font-medium text-sm text-center">CE-gekennzeichnetes Testkit nach EU-IVDR</p>
               </div>
-              <div className="flex flex-col items-center gap-3 animate-slide-wave animate-slide-wave-2 absolute md:relative">
-                <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="carousel-item">
+                <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
                   </svg>
                 </div>
-                <p className="text-gray-700 font-medium text-sm text-center max-w-40">Analyse in DAkkS-akkreditierten Laboren nach DIN EN ISO 15189</p>
+                <p className="text-gray-700 font-medium text-sm text-center">Analyse in deutschen Partnerlaboren</p>
               </div>
-              <div className="flex flex-col items-center gap-3 animate-slide-wave animate-slide-wave-3 absolute md:relative">
-                <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <div className="carousel-item">
+                <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                   </svg>
                 </div>
-                <p className="text-gray-700 font-medium text-sm text-center max-w-40">Datenschutz nach DSGVO mit Verarbeitung auf EU-Servern</p>
+                <p className="text-gray-700 font-medium text-sm text-center">Datenschutz nach DSGVO mit EU-Servern</p>
               </div>
-              <div className="flex flex-col items-center gap-3 animate-slide-wave animate-slide-wave-4 absolute md:relative">
-                <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10h-2m0 0h-2m2 0V8m0 2v2m6-6a9 9 0 11-18 0 9 9 0 0118 0z" />
+              <div className="carousel-item">
+                <div className="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg className="w-5 h-5 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7 12a5 5 0 1110 0A5 5 0 017 12z" />
                   </svg>
                 </div>
-                <p className="text-gray-700 font-medium text-sm text-center max-w-40">Medizinisch validierte Auswertung durch qualifiziertes Fachpersonal</p>
-              </div>
-              <div className="flex flex-col items-center gap-3 animate-slide-wave animate-slide-wave-5 absolute md:relative">
-                <div className="w-12 h-12 bg-gray-100 rounded-full flex items-center justify-center">
-                  <svg className="w-6 h-6 text-gray-700" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5.581m0 0H9m5.581 0a2 2 0 100-4 2 2 0 000 4zM9 7h.01M9 3a1 1 0 11-2 0 1 1 0 012 0zm5 4a1 1 0 11-2 0 1 1 0 012 0z" />
-                  </svg>
-                </div>
-                <p className="text-gray-700 font-medium text-sm text-center max-w-40">Zusammenarbeit mit geprüften deutschen Partnerlaboren</p>
+                <p className="text-gray-700 font-medium text-sm text-center">Medizinisch geprüfte und klar erklärte Ergebnisse</p>
               </div>
             </div>
           </div>
