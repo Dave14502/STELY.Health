@@ -109,11 +109,7 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
               </form>
 
               <p className="text-xs text-gray-500 text-center mb-6 leading-relaxed">
-                Mit deiner Anmeldung stimmst du der Verarbeitung gemäß unserer{' '}
-                <a href="#" className="text-blue-500 hover:underline font-medium">
-                  Datenschutzerklärung
-                </a>{' '}
-                zu.
+                Mit deiner Anmeldung stimmst du der Verarbeitung deiner Daten nach DSGVO und unserer Datenschutzerklärung zu.
               </p>
 
               {/* Trust Indicators */}
