@@ -11,7 +11,7 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
-  const handleSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     if (!email) return;
@@ -19,32 +19,31 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
     setIsLoading(true);
 
     try {
-      // Send to Google Sheets via Netlify Function
-      const response = await fetch('/.netlify/functions/waitlist', {
+      // Submit to Netlify Forms
+      const formData = new FormData(e.currentTarget);
+      const response = await fetch('/', {
         method: 'POST',
         headers: {
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/x-www-form-urlencoded',
         },
-        body: JSON.stringify({ email }),
+        body: new URLSearchParams(formData as any).toString(),
       });
 
-      if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.error || 'Failed to add email to waitlist');
+      if (response.ok) {
+        setSuccess(true);
+        setEmail('');
+
+        // Close modal after success message
+        setTimeout(() => {
+          onClose();
+          setSuccess(false);
+        }, 2500);
+      } else {
+        throw new Error('Form submission failed');
       }
-
-      setSuccess(true);
-      setEmail('');
-
-      // Close modal after success message
-      setTimeout(() => {
-        onClose();
-        setSuccess(false);
-      }, 2500);
     } catch (error) {
       console.error('Error joining waitlist:', error);
-      // Show error to user - optional
-      alert(error instanceof Error ? error.message : 'Ein Fehler ist aufgetreten. Bitte versuche es später erneut.');
+      alert('Ein Fehler ist aufgetreten. Bitte versuche es später erneut.');
     } finally {
       setIsLoading(false);
     }
