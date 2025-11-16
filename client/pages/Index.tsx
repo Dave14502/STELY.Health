@@ -68,14 +68,16 @@ export default function Index() {
         <style>{`
           @keyframes autoScroll {
             0% { transform: translateX(0); }
-            100% { transform: translateX(calc(-260px * 8 - 1.5rem * 8)); }
+            100% { transform: translateX(calc(-270px * 4 - 1.5rem * 4)); }
+          }
+          .carousel-wrapper {
+            overflow: hidden;
           }
           .carousel-container {
             display: flex;
             gap: 1.5rem;
-            overflow: hidden;
             padding: 0.5rem 0;
-            animation: autoScroll 40s linear infinite;
+            animation: autoScroll 30s linear infinite;
           }
           .carousel-container:hover {
             animation-play-state: paused;
@@ -94,7 +96,7 @@ export default function Index() {
             }
             @keyframes autoScroll {
               0% { transform: translateX(0); }
-              100% { transform: translateX(calc(-220px * 8 - 1.5rem * 8)); }
+              100% { transform: translateX(calc(-230px * 4 - 1.5rem * 4)); }
             }
           }
         `}</style>
