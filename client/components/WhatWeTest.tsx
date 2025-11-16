@@ -95,15 +95,15 @@ export default function WhatWeTest() {
                         onClick={() => toggleItem(item.id)}
                         className="w-full px-4 py-3 flex items-center justify-between hover:bg-gray-50 transition"
                       >
-                        <div className="flex items-center gap-2">
+                        <span className="text-sm font-medium text-gray-900">{item.name}</span>
+                        <div className="flex items-center gap-3">
                           {IconComponent && <IconComponent className="w-4 h-4 text-gray-400 flex-shrink-0" />}
-                          <span className="text-sm font-medium text-gray-900">{item.name}</span>
+                          {expandedItems.includes(item.id) ? (
+                            <Minus className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                          ) : (
+                            <Plus className="w-4 h-4 text-gray-400 flex-shrink-0" />
+                          )}
                         </div>
-                        {expandedItems.includes(item.id) ? (
-                          <Minus className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                        ) : (
-                          <Plus className="w-4 h-4 text-gray-400 flex-shrink-0" />
-                        )}
                       </button>
 
                       {expandedItems.includes(item.id) && (
