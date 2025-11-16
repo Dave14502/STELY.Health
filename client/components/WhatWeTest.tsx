@@ -97,14 +97,14 @@ export default function WhatWeTest() {
                         <div className="flex items-center gap-3">
                           {item.genderIcon === 'female' && (
                             <svg className="w-4 h-4 text-gray-400 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                              <circle cx="12" cy="8" r="4" />
-                              <path d="M12 12v7M9 19h6" />
+                              <circle cx="12" cy="7" r="5" />
+                              <path d="M12 12v5M12 17v3M9 20h6" />
                             </svg>
                           )}
                           {item.genderIcon === 'male' && (
                             <svg className="w-4 h-4 text-gray-400 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                              <circle cx="15" cy="8" r="4" />
-                              <path d="M15 12v7M12 19h6M15 12l-5-5" />
+                              <circle cx="9" cy="7" r="5" />
+                              <path d="M14 2l5 5M19 7h-4V3" />
                             </svg>
                           )}
                           {expandedItems.includes(item.id) ? (
