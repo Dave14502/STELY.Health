@@ -124,7 +124,7 @@ export default function Index() {
               </div>
               <div className="carousel-item">
                 <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                  <path d="M13 3h-2v8H3v2h8v8h2v-8h8v-2h-8V3z" />
                 </svg>
                 <p className="text-gray-700 font-medium text-sm text-center">Medizinisch geprüfte und klar erklärte Ergebnisse</p>
               </div>
@@ -150,7 +150,7 @@ export default function Index() {
               </div>
               <div className="carousel-item">
                 <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
+                  <path d="M13 3h-2v8H3v2h8v8h2v-8h8v-2h-8V3z" />
                 </svg>
                 <p className="text-gray-700 font-medium text-sm text-center">Medizinisch geprüfte und klar erklärte Ergebnisse</p>
               </div>
