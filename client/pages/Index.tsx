@@ -29,7 +29,7 @@ export default function Index() {
 
               {/* Subheadline */}
               <p className="text-lg sm:text-xl text-gray-700 mb-6 leading-relaxed">
-                Ein Test zu Hause. Ein klarer Bericht. Ein System, das dir zeigt, wie dein Körper wirklich funktioniert.
+                Ein Test zu Hause. Klare Ergebnisse. Echte Kontrolle.
               </p>
 
               {/* Price */}
