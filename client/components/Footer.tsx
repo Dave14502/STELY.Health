@@ -9,16 +9,16 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-bold mb-4">STELY</h3>
             <div className="flex gap-4">
-              <a href="#" className="p-2 rounded-full hover:bg-white/10 transition duration-300 transform hover:scale-110">
+              <a href="#" className="p-2 rounded-full hover:bg-white/10 transition duration-300 transform hover:scale-110" aria-label="Instagram">
                 <Instagram className="w-5 h-5" />
               </a>
-              <a href="#" className="p-2 rounded-full hover:bg-white/10 transition duration-300 transform hover:scale-110">
+              <a href="#" className="p-2 rounded-full hover:bg-white/10 transition duration-300 transform hover:scale-110" aria-label="Twitter">
                 <Twitter className="w-5 h-5" />
               </a>
-              <a href="#" className="p-2 rounded-full hover:bg-white/10 transition duration-300 transform hover:scale-110">
+              <a href="#" className="p-2 rounded-full hover:bg-white/10 transition duration-300 transform hover:scale-110" aria-label="Facebook">
                 <Facebook className="w-5 h-5" />
               </a>
-              <a href="#" className="p-2 rounded-full hover:bg-white/10 transition duration-300 transform hover:scale-110">
+              <a href="#" className="p-2 rounded-full hover:bg-white/10 transition duration-300 transform hover:scale-110" aria-label="YouTube">
                 <Youtube className="w-5 h-5" />
               </a>
             </div>
