@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { X, Zap, CheckCircle2 } from 'lucide-react';
+import { X, CheckCircle2 } from 'lucide-react';
 
 interface WaitlistModalProps {
   isOpen: boolean;
@@ -48,12 +48,9 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
 
   return (
     <div className="fixed inset-0 bg-black/60 backdrop-blur-sm flex items-center justify-center z-50 p-4 animate-in fade-in duration-200">
-      <div className="bg-white rounded-3xl shadow-2xl max-w-md w-full overflow-hidden animate-in scale-95 fade-in duration-300">
-        {/* Gradient Header */}
-        <div className="h-2 bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500"></div>
-
+      <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full overflow-hidden animate-in scale-95 fade-in duration-300">
         {/* Close Button */}
-        <div className="flex justify-end p-5">
+        <div className="flex justify-end p-4">
           <button
             onClick={onClose}
             className="text-gray-400 hover:text-gray-600 transition duration-200 hover:bg-gray-100 rounded-full p-2"
@@ -66,45 +63,39 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
         <div className="px-8 pb-8">
           {success ? (
             <div className="text-center py-6 animate-in fade-in duration-300">
-              <div className="w-20 h-20 bg-gradient-to-br from-green-50 to-blue-50 rounded-full flex items-center justify-center mx-auto mb-5 animate-pulse">
-                <CheckCircle2 className="w-10 h-10 text-green-500" />
+              <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5">
+                <CheckCircle2 className="w-10 h-10 text-blue-500" />
               </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-2">Geschafft!</h2>
               <p className="text-gray-600 leading-relaxed">
-                Du wirst als Erste informiert, wenn die Performance-Kits verfügbar sind. 🚀
+                Überprüfe deine E-Mail für deinen 10 Prozent Rabattcode. 🎉
               </p>
             </div>
           ) : (
             <>
-              <div className="flex items-start gap-3 mb-5">
-                <Zap className="w-6 h-6 text-blue-500 flex-shrink-0 mt-1" />
-                <div>
-                  <h2 className="text-3xl font-bold text-gray-900 leading-tight">
-                    Sei der Erste im Loop.
-                  </h2>
-                </div>
+              <div className="mb-6">
+                <h2 className="text-3xl font-bold text-gray-900 leading-tight mb-3">
+                  Sichere dir 10 Prozent Rabatt auf deinen ersten STELY Test.
+                </h2>
+                <p className="text-gray-600 leading-relaxed">
+                  Trag dich ein und erfahre als Erstes, wenn die Performance-Kits starten. Kein Spam.
+                </p>
               </div>
 
-              <p className="text-gray-600 mb-7 leading-relaxed">
-                Erfahre als Erster, wenn die Performance-Kits live gehen. Kein Spam – versprochen.
-              </p>
-
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div className="relative">
-                  <input
-                    type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                    placeholder="deine@email.de"
-                    required
-                    className="w-full px-5 py-4 bg-gray-50 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-blue-500 focus:bg-white transition duration-200 text-gray-900 placeholder-gray-400 font-medium"
-                  />
-                </div>
+              <form onSubmit={handleSubmit} className="space-y-4 mb-6">
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="deine@email.de"
+                  required
+                  className="w-full px-4 py-3 bg-gray-50 border border-gray-200 rounded-lg focus:outline-none focus:border-blue-500 focus:bg-white transition duration-200 text-gray-900 placeholder-gray-400"
+                />
 
                 <button
                   type="submit"
                   disabled={isLoading || !email}
-                  className="w-full bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 disabled:from-gray-300 disabled:to-gray-300 text-white font-bold py-4 rounded-xl transition duration-200 transform hover:scale-105 disabled:scale-100 disabled:cursor-not-allowed shadow-lg hover:shadow-xl"
+                  className="w-full bg-blue-500 hover:bg-blue-600 disabled:bg-gray-300 text-white font-bold py-3 rounded-lg transition duration-200 disabled:cursor-not-allowed"
                 >
                   {isLoading ? (
                     <span className="flex items-center justify-center gap-2">
@@ -112,13 +103,13 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
                       Wird hinzugefügt...
                     </span>
                   ) : (
-                    'Zur Warteliste'
+                    'Rabatt sichern'
                   )}
                 </button>
               </form>
 
-              <p className="text-xs text-gray-500 mt-6 text-center leading-relaxed">
-                Mit der Anmeldung stimmst du der Verarbeitung gemäß unserer{' '}
+              <p className="text-xs text-gray-500 text-center mb-6 leading-relaxed">
+                Mit deiner Anmeldung stimmst du der Verarbeitung gemäß unserer{' '}
                 <a href="#" className="text-blue-500 hover:underline font-medium">
                   Datenschutzerklärung
                 </a>{' '}
@@ -126,18 +117,18 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
               </p>
 
               {/* Trust Indicators */}
-              <div className="mt-6 pt-6 border-t border-gray-200 grid grid-cols-3 gap-3 text-center">
-                <div>
-                  <p className="text-xs text-gray-500 mb-1">✓</p>
-                  <p className="text-xs text-gray-600 font-medium">Kostenlos</p>
+              <div className="space-y-2">
+                <div className="flex items-center gap-2 text-sm text-gray-700">
+                  <span className="text-blue-500 font-bold">✓</span>
+                  <span>10 Prozent auf den ersten Test</span>
                 </div>
-                <div>
-                  <p className="text-xs text-gray-500 mb-1">✓</p>
-                  <p className="text-xs text-gray-600 font-medium">Kein Spam</p>
+                <div className="flex items-center gap-2 text-sm text-gray-700">
+                  <span className="text-blue-500 font-bold">✓</span>
+                  <span>Kein Spam</span>
                 </div>
-                <div>
-                  <p className="text-xs text-gray-500 mb-1">✓</p>
-                  <p className="text-xs text-gray-600 font-medium">Privat</p>
+                <div className="flex items-center gap-2 text-sm text-gray-700">
+                  <span className="text-blue-500 font-bold">✓</span>
+                  <span>EU-Datenschutz</span>
                 </div>
               </div>
             </>
