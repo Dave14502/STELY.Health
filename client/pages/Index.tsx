@@ -66,16 +66,19 @@ export default function Index() {
 
         {/* Validation Carousel Section */}
         <style>{`
+          @keyframes autoScroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(calc(-260px * 4 - 1.5rem * 4)); }
+          }
           .carousel-container {
             display: flex;
             gap: 1.5rem;
-            overflow-x: auto;
-            scroll-behavior: smooth;
+            overflow: hidden;
             padding: 0.5rem 0;
-            scrollbar-width: none;
+            animation: autoScroll 20s linear infinite;
           }
-          .carousel-container::-webkit-scrollbar {
-            display: none;
+          .carousel-container:hover {
+            animation-play-state: paused;
           }
           .carousel-item {
             flex: 0 0 auto;
@@ -88,6 +91,10 @@ export default function Index() {
           @media (max-width: 768px) {
             .carousel-item {
               width: 220px;
+            }
+            @keyframes autoScroll {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(calc(-220px * 4 - 1.5rem * 4)); }
             }
           }
         `}</style>
