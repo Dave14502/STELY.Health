@@ -14,11 +14,10 @@ export default function Pricing({ onOpenWaitlist }: PricingProps) {
     'Persönlicher Support – keine Callcenterantworten',
   ];
 
-  const flexibility = [
+  const metadata = [
     'Pro Test abgerechnet',
     'Jederzeit pausieren oder kündigen',
     'Keine Mindestlaufzeit',
-    'Volle Kostenkontrolle',
   ];
 
   return (
@@ -27,57 +26,62 @@ export default function Pricing({ onOpenWaitlist }: PricingProps) {
         <div className="rounded-2xl overflow-hidden bg-white border border-gray-200 shadow-sm p-8 lg:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Left - Image */}
-            <div className="flex items-center justify-center">
+            <div className="flex items-start justify-center">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fe68beefb6f194086a94ad4f680f90310?format=webp&width=800"
                 alt="STELY-Produkt"
-                className="w-full h-auto rounded-xl object-cover"
+                className="w-full h-auto rounded-lg object-cover max-h-96"
               />
             </div>
 
             {/* Right - Content */}
-            <div className="flex flex-col justify-between">
-              <div>
-                <h2 className="text-4xl font-bold mb-2 text-gray-900">STELY Mitgliedschaft</h2>
-                <div className="mb-6">
-                  <div className="flex items-baseline gap-2 mb-2">
-                    <span className="text-5xl font-bold text-gray-900">ab 89 €</span>
+            <div className="flex flex-col justify-start">
+              {/* Header and Price */}
+              <div className="mb-8">
+                <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">STELY Mitgliedschaft</h2>
+                <div className="mb-4">
+                  <div className="flex items-baseline gap-1 mb-1">
+                    <span className="text-5xl font-bold text-gray-900">89 €</span>
                     <span className="text-lg text-gray-600">/Monat</span>
                   </div>
-                  <p className="text-gray-700 font-semibold mb-2">Einfach. Schnell. Klar.</p>
-                  <p className="text-gray-600">Monatliche Blutanalyse für echte Performance.</p>
+                  <p className="text-sm text-gray-500">+ Versand & Bearbeitung</p>
                 </div>
+              </div>
 
-                <button
-                  onClick={onOpenWaitlist}
-                  className="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-bold transition mb-8 text-base"
-                >
-                  Jetzt ersten Test sichern
-                </button>
+              {/* Subheading */}
+              <p className="text-gray-700 mb-8">
+                <span className="font-semibold">Einfach. Schnell. Klar.</span>
+                <br />
+                <span className="text-gray-600">Monatliche Blutanalyse für echte Performance.</span>
+              </p>
+
+              {/* CTA Button */}
+              <button
+                onClick={onOpenWaitlist}
+                className="bg-gray-900 hover:bg-black text-white py-3 rounded-lg font-bold transition mb-4 text-base w-full sm:w-auto"
+              >
+                Jetzt ersten Test sichern
+              </button>
+
+              {/* Metadata Tags */}
+              <div className="flex flex-wrap gap-2 mb-8">
+                {metadata.map((tag, index) => (
+                  <span key={index} className="text-xs text-gray-600 bg-gray-100 px-3 py-1 rounded-full">
+                    {tag}
+                  </span>
+                ))}
               </div>
 
               {/* What's Included */}
               <div>
-                <h3 className="text-lg font-bold mb-4 text-gray-900">Was du bekommst</h3>
-                <div className="space-y-3 mb-8">
+                <h3 className="font-bold mb-4 text-gray-900 text-lg">Was ist enthalten</h3>
+                <div className="space-y-3">
                   {features.map((item, index) => (
                     <div key={index} className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-blue-500 text-white flex items-center justify-center flex-shrink-0 mt-0.5">
+                      <div className="w-5 h-5 rounded-full bg-gray-900 text-white flex items-center justify-center flex-shrink-0 mt-0.5">
                         <Check className="w-3 h-3" />
                       </div>
-                      <span className="text-gray-700 text-sm font-medium">{item}</span>
-                    </div>
-                  ))}
-                </div>
-
-                <h3 className="text-lg font-bold mb-4 text-gray-900">Flexibel und ohne Risiko</h3>
-                <div className="space-y-3">
-                  {flexibility.map((item, index) => (
-                    <div key={index} className="flex items-start gap-3">
-                      <div className="w-5 h-5 rounded-full bg-blue-500 text-white flex items-center justify-center flex-shrink-0 mt-0.5">
-                        <Check className="w-3 h-3" />
-                      </div>
-                      <span className="text-gray-700 text-sm font-medium">{item}</span>
+                      <span className="text-gray-700 text-sm">{item}</span>
                     </div>
                   ))}
                 </div>
