@@ -37,7 +37,7 @@ export default function WayBetter() {
           <div className="flex flex-col items-center">
             <h3 className="text-2xl lg:text-3xl font-bold text-center mb-4 text-gray-900">Effizienter</h3>
             <p className="text-lg font-semibold text-center mb-4 text-gray-900">Nur die Marker, die zählen</p>
-            <p className="text-base text-gray-700 text-center mb-8">Keine überflüssigen Tests. Wir messen, was wirklich Einfluss auf deine Performance, Energie und Gesundheit hat.</p>
+            <p className="text-base text-gray-700 text-center mb-8">Nur die Tests, die zählen. Keine Verschwendung.</p>
             <div className="w-full h-80 lg:h-96 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center overflow-hidden">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2F2dac9fcd2d5a47b9a906897ee15b1458?format=webp&width=800"
