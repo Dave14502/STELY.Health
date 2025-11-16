@@ -102,7 +102,8 @@ export default function Index() {
         `}</style>
         <div className="w-full bg-white border-t border-gray-200 px-4 sm:px-6 lg:px-8 py-6">
           <div className="max-w-7xl mx-auto">
-            <div className="carousel-container">
+            <div className="carousel-wrapper">
+              <div className="carousel-container">
               <div className="carousel-item">
                 <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7 12a5 5 0 1110 0A5 5 0 017 12z" />
@@ -153,6 +154,7 @@ export default function Index() {
                 </svg>
                 <p className="text-gray-700 font-medium text-sm text-center">Medizinisch geprüfte und klar erklärte Ergebnisse</p>
               </div>
+            </div>
             </div>
           </div>
         </div>
