@@ -111,9 +111,11 @@ export default function Index() {
                 <p className="text-gray-700 font-medium text-sm text-center">CE-gekennzeichnetes Testkit nach EU-IVDR</p>
               </div>
               <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                  <path d="M8 18h8m-4-8c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3m0 2v2m-2-2h4v2h-4m-2 2h8c.55 0 1 .45 1 1v3c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-3c0-.55.45-1 1-1m1 3h6v-2H8v2m6-6l2-2m-8 2l-2-2" />
-                </svg>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fd2be1f409e834d6dada82b4e83238010?format=webp&width=800"
+                  alt="Mikroskop"
+                  className="w-6 h-6 flex-shrink-0"
+                />
                 <p className="text-gray-700 font-medium text-sm text-center">Analyse in deutschen Partnerlaboren</p>
               </div>
               <div className="carousel-item">
@@ -138,9 +140,11 @@ export default function Index() {
                 <p className="text-gray-700 font-medium text-sm text-center">CE-gekennzeichnetes Testkit nach EU-IVDR</p>
               </div>
               <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="1.5" viewBox="0 0 24 24">
-                  <path d="M8 18h8m-4-8c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3m0 2v2m-2-2h4v2h-4m-2 2h8c.55 0 1 .45 1 1v3c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-3c0-.55.45-1 1-1m1 3h6v-2H8v2m6-6l2-2m-8 2l-2-2" />
-                </svg>
+                <img
+                  src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fd2be1f409e834d6dada82b4e83238010?format=webp&width=800"
+                  alt="Mikroskop"
+                  className="w-6 h-6 flex-shrink-0"
+                />
                 <p className="text-gray-700 font-medium text-sm text-center">Analyse in deutschen Partnerlaboren</p>
               </div>
               <div className="carousel-item">
