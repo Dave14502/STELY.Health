@@ -34,7 +34,7 @@ export default function Index() {
 
               {/* Price */}
               <p className="text-lg text-gray-900 mb-4">
-                <span className="font-bold">Für nur 79 Euro im Monat.</span>
+                <span className="font-bold">Für nur 89 Euro im Monat.</span>
               </p>
 
               <p className="text-base text-gray-600 mb-8">
