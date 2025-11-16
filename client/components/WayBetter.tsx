@@ -50,7 +50,7 @@ export default function WayBetter() {
             <h3 className="text-2xl lg:text-3xl font-bold text-center mb-8 text-gray-900">Monatliches Tracking macht es einfach, dein Bestes zu zeigen.</h3>
             <div className="w-full h-80 lg:h-96 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center overflow-hidden">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fb1febb4ac3ab4f5aa27eb8b051c200c8?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2F712d11f95b84492cb7f64880d9d1e9d5?format=webp&width=800"
                 alt="Viel effektiver"
                 className="w-full h-full object-contain"
               />
