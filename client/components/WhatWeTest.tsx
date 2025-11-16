@@ -28,6 +28,7 @@ const testCategories: TestCategory[] = [
   },
   {
     title: 'Herzgesundheit',
+    icon: Heart,
     items: [
       { id: '6', name: 'ApoB', description: 'Apolipoprotein B ist ein starker Indikator für das Herzinfarkt- und Schlaganfallrisiko.' },
       { id: '7', name: 'LDL-Cholesterin', description: 'Das "schlechte" Cholesterin, das sich in den Arterien ansammeln und das Herzerkrankungsrisiko erhöhen kann.' },
