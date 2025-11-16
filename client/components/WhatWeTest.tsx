@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Plus, Minus, Scale, Zap, Flame } from 'lucide-react';
+import { Plus, Minus, Scale, Leaf, Shield } from 'lucide-react';
 
 interface TestItem {
   id: string;
