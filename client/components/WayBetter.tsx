@@ -37,7 +37,7 @@ export default function WayBetter() {
             <h3 className="text-2xl lg:text-3xl font-bold text-center mb-8 text-gray-900">Wir verfolgen die Marker, die wichtig sind.</h3>
             <div className="w-full h-80 lg:h-96 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center overflow-hidden">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2F9087e8fd80f345c7892f0b313a483e98?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fe4c5f21db9284011879431a43b5d16d4?format=webp&width=800"
                 alt="Viel effizienter"
                 className="w-full h-full object-contain"
               />
@@ -50,7 +50,7 @@ export default function WayBetter() {
             <h3 className="text-2xl lg:text-3xl font-bold text-center mb-8 text-gray-900">Monatliches Tracking macht es einfach, dein Bestes zu zeigen.</h3>
             <div className="w-full h-80 lg:h-96 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center overflow-hidden">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fe5252cc6a6b5499289bfa37a6b2ce459?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fb1febb4ac3ab4f5aa27eb8b051c200c8?format=webp&width=800"
                 alt="Viel effektiver"
                 className="w-full h-full object-contain"
               />
