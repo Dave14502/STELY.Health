@@ -109,7 +109,7 @@ export default function Index() {
               </div>
               <div className="carousel-item">
                 <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10h8M13 10L5.5 2M13 10l7.5 8M5.5 2h3m0 0V1m0 1v3m0 5h8m-3 2V4" />
                 </svg>
                 <p className="text-gray-700 font-medium text-sm text-center">Analyse in deutschen Partnerlaboren</p>
               </div>
@@ -121,7 +121,33 @@ export default function Index() {
               </div>
               <div className="carousel-item">
                 <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2-8a2 2 0 11-4 0 2 2 0 014 0zM7 20H5a2 2 0 01-2-2V9a2 2 0 012-2h14a2 2 0 012 2v9a2 2 0 01-2 2h-2m-2-3H9" />
+                </svg>
+                <p className="text-gray-700 font-medium text-sm text-center">Medizinisch geprüfte und klar erklärte Ergebnisse</p>
+              </div>
+
+              {/* Duplicate items for infinite loop */}
+              <div className="carousel-item">
+                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7 12a5 5 0 1110 0A5 5 0 017 12z" />
+                </svg>
+                <p className="text-gray-700 font-medium text-sm text-center">CE-gekennzeichnetes Testkit nach EU-IVDR</p>
+              </div>
+              <div className="carousel-item">
+                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10h8M13 10L5.5 2M13 10l7.5 8M5.5 2h3m0 0V1m0 1v3m0 5h8m-3 2V4" />
+                </svg>
+                <p className="text-gray-700 font-medium text-sm text-center">Analyse in deutschen Partnerlaboren</p>
+              </div>
+              <div className="carousel-item">
+                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                </svg>
+                <p className="text-gray-700 font-medium text-sm text-center">Datenschutz nach DSGVO mit EU-Servern</p>
+              </div>
+              <div className="carousel-item">
+                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2-8a2 2 0 11-4 0 2 2 0 014 0zM7 20H5a2 2 0 01-2-2V9a2 2 0 012-2h14a2 2 0 012 2v9a2 2 0 01-2 2h-2m-2-3H9" />
                 </svg>
                 <p className="text-gray-700 font-medium text-sm text-center">Medizinisch geprüfte und klar erklärte Ergebnisse</p>
               </div>
