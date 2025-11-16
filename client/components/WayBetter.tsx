@@ -23,7 +23,7 @@ export default function WayBetter() {
           <div className="flex flex-col items-center">
             <h3 className="text-2xl lg:text-3xl font-bold text-center mb-4 text-gray-900">Weniger Zeit</h3>
             <p className="text-lg font-semibold text-center mb-4 text-gray-900">Keine Wartezeiten</p>
-            <p className="text-base text-gray-700 text-center mb-8">Kein Termin beim Arzt. Keine Wartezimmer. Kein verpasstes Training. Mach es, wann es dir passt.</p>
+            <p className="text-base text-gray-700 text-center mb-8">Kein Arzttermin. Keine Wartezimmer. Dein Timing.</p>
             <div className="w-full h-80 lg:h-96 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center overflow-hidden">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2F9b6446b54be7401284ff957faa7f3a5b?format=webp&width=800"
