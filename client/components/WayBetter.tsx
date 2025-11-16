@@ -54,7 +54,7 @@ export default function WayBetter() {
             <p className="text-base text-gray-700 text-center mb-8">Monatliche Tests funktionieren wie dein Trainings-Tracking – sie zeigen dir Fortschritte und Trends über die Zeit.</p>
             <div className="w-full h-80 lg:h-96 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center overflow-hidden">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2F712d11f95b84492cb7f64880d9d1e9d5?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Ff8588cb95fe442659bc40e06cb4c0bf0?format=webp&width=800"
                 alt="Effektiver"
                 className="w-full h-full object-contain"
               />
