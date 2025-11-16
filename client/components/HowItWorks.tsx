@@ -2,21 +2,21 @@ export default function HowItWorks() {
   const steps = [
     {
       number: 1,
-      title: "Probe zu Hause sammeln",
+      title: "Blutprobe zu Hause",
       image: "https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fa45689e701334367a30714c49da70164?format=webp&width=800",
-      alt: "Probe zu Hause sammeln"
+      alt: "Blutprobe zu Hause"
     },
     {
       number: 2,
-      title: "Sende deine Probe",
+      title: "Versenden",
       image: "https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fd64d3967479e42ac847590a4cd5c0967?format=webp&width=800",
-      alt: "Sende deine Probe"
+      alt: "Versenden"
     },
     {
       number: 3,
-      title: "Ergebnisse in Tagen erhalten",
+      title: "Ergebnisse in wenigen Tagen",
       image: "https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fadad71577d2c4fcc8b20831845929acf?format=webp&width=800",
-      alt: "Ergebnisse in Tagen erhalten"
+      alt: "Ergebnisse in wenigen Tagen"
     }
   ];
 
