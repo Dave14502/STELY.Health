@@ -16,12 +16,12 @@ const testCategories: TestCategory[] = [
   {
     title: 'Hormonelles Gleichgewicht',
     items: [
-      { id: '1', name: 'Östrogen (Östradiol E2)', description: 'Östrogen ist ein Schlüsselhormon bei Männern und Frauen, das die reproduktive Gesundheit, Stimmung, Knochenstärke und das allgemeine hormonelle Gleichgewicht unterstützt.' },
-      { id: '2', name: 'Progesteron', description: 'Progesteron ist entscheidend für den Menstruationszyklus, die Schwangerschaft und die Aufrechterhaltung des hormonellen Gleichgewichts bei Frauen.' },
-      { id: '3', name: 'SHBG', description: 'Sexualhormon-bindendes Globulin reguliert die Verfügbarkeit von Testosteron und Östrogen im Körper.' },
-      { id: '4', name: 'TSH (Schilddrüse)', description: 'Das Schilddrüsen-stimulierende Hormon steuert die Schilddrüsenfunktion und den Stoffwechsel.' },
-      { id: '5', name: 'Freies Testosteron', description: 'Das biologisch aktive Testosteron, das für Muskelaufbau, Knochengesundheit und sexuelle Funktion bei Männern und Frauen wichtig ist.' },
-      { id: '6', name: 'Gesamt-Testosteron', description: 'Die Gesamtmenge an Testosteron im Blut, einschließlich gebundener und freier Form.' },
+      { id: '1', name: 'Östrogen (Östradiol E2)', description: 'Estrogen ist ein wichtiges Hormon bei Männern und Frauen, das die reproduktive Gesundheit, Stimmung, Knochengesundheit und das allgemeine hormonelle Gleichgewicht unterstützt.' },
+      { id: '2', name: 'Progesteron', description: 'Progesteron hilft dabei, Hormone im Gleichgewicht zu halten und unterstützt Schlaf, Stimmung und die allgemeine Stabilität im Körper.' },
+      { id: '3', name: 'SHBG', description: 'SHBG kontrolliert, wie viel aktives Estrogen und Testosteron dein Körper nutzen kann, was Einfluss auf Energie, Stimmung und Libido hat.' },
+      { id: '4', name: 'TSH (Schilddrüse)', description: 'Ein Hormon, das die Schilddrüse reguliert. Es steuert Stoffwechsel, Energie und die Temperaturregulation.' },
+      { id: '5', name: 'Freies Testosteron', description: 'Testosteron beeinflusst Muskelmasse, Energie, Stimmung, Libido und Knochengesundheit.' },
+      { id: '6', name: 'Gesamt-Testosteron', description: 'Testosteron beeinflusst Muskelmasse, Energie, Stimmung, Libido und Knochengesundheit.' },
     ],
   },
   {
