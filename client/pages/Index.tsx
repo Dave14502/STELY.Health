@@ -15,9 +15,17 @@ export default function Index() {
   return (
     <div className="w-full bg-white">
       {/* Hidden Netlify Form for submission */}
-      <form name="waitlist" method="POST" style={{ display: "none" }}>
+      <form
+        name="waitlist"
+        method="POST"
+        action="/"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        style={{ display: "none" }}
+      >
         <input type="hidden" name="form-name" value="waitlist" />
-        <input type="email" name="email" defaultValue="" />
+        <input type="hidden" name="bot-field" />
+        <input type="email" name="email" />
       </form>
 
       <Header onOpenWaitlist={() => setIsWaitlistOpen(true)} />
