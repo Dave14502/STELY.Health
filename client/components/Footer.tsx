@@ -57,15 +57,15 @@ export default function Footer() {
         {/* Disclaimer */}
         <div className="border-t border-gray-700 pt-8 mt-8">
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
-            Rythm Health ist ein Gesundheitstechnologieunternehmen und keine Laboratoriums- oder Arztpraxis. Alle Labor- und medizinischen Dienste werden von unabhängigen Drittanbietern bereitgestellt. Diese Labor- und medizinischen Dienstleister legen ihre eigenen Preise fest. Obwohl Rythm Health möglicherweise einen einfachen Zugang zu bestimmten Labor- und medizinischen Dienstleistern in Ihrem Namen erleichtert, empfiehlt Rythm Health Sie nicht an Gesundheitsdienstleister weiter oder verweist Sie nicht an diese, und Sie können frei einen Gesundheitsdienstleister wählen und Rythm Health's Services weiterhin nutzen.
+            STELY ist ein Gesundheitstechnologieanbieter und keine Arztpraxis. Die Laboranalysen werden von unabhängigen, externen Partnerlaboren durchgeführt. Du bist frei in der Wahl deines Arztes und kannst die STELY Services unabhängig davon nutzen.
           </p>
 
           <p className="text-gray-400 text-sm leading-relaxed mb-6">
-            Rythm Health bietet keine medizinischen Ratschläge, Laborservices, Diagnosen, medizinische Behandlung oder irgendeine Form von medizinischer Meinung durch unsere Services oder auf andere Weise.
+            STELY bietet keine medizinischen Diagnosen, Behandlungen oder therapeutischen Empfehlungen an. Alle Inhalte dienen ausschließlich der Information.
           </p>
 
           <p className="text-gray-400 text-sm leading-relaxed">
-            Rythm Health's Services sind kein Ersatz für medizinische Versorgung, medizinische Ratschläge und/oder ein ausführliches Gespräch mit deinem Hausarzt oder einem anderen zugelassenen Anbieter. Wenn du Fragen zu Testergebnissen hast, empfehlen wir dir, diese mit deinem Hausarzt oder einem anderen zugelassenen Anbieter zu besprechen.
+            Die STELY Ergebnisse ersetzen nicht die persönliche Beratung durch eine Ärztin oder einen Arzt. Wenn du Fragen zu deinen Werten hast oder medizinische Entscheidungen treffen möchtest, besprich die Ergebnisse bitte mit einem qualifizierten Gesundheitsdienstleister.
           </p>
         </div>
       </div>
