@@ -31,7 +31,7 @@ export default function CookieConsent() {
           <div className="flex-1">
             <h3 className="font-bold text-gray-900 mb-2">Datenschutz & Cookies</h3>
             <p className="text-sm text-gray-600 leading-relaxed">
-              Wir verwenden Cookies und ähnliche Technologien, um dein Erlebnis zu verbessern, Inhalte und Anzeigen zu personalisieren und Zugriffe zu analysieren. Weitere Informationen findest du in unserer <a href="#" className="text-blue-500 hover:underline">Datenschutzrichtlinie</a>.
+              Wir verwenden Cookies und ähnliche Technologien, um dein Erlebnis zu verbessern, Inhalte und Anzeigen zu personalisieren und Zugriffe zu analysieren. Weitere Informationen findest du in unserer Datenschutzrichtlinie.
             </p>
           </div>
           
