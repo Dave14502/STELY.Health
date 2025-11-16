@@ -9,7 +9,7 @@ export default function WayBetter() {
           <div className="flex flex-col items-center">
             <h3 className="text-2xl lg:text-3xl font-bold text-center mb-4 text-gray-900">Weniger Blut</h3>
             <p className="text-lg font-semibold text-center mb-4 text-gray-900">10-mal weniger Blut als beim Arzt</p>
-            <p className="text-base text-gray-700 text-center mb-8">Nur ein paar Tropfen statt mehrere Röhrchen. Einfacher. Schneller. Weniger unangenehm.</p>
+            <p className="text-base text-gray-700 text-center mb-8">Nur ein paar Tropfen. Keine Nadel-Angst.</p>
             <div className="w-full h-80 lg:h-96 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center overflow-hidden">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fe2776fc833734b14abad9d844ee71225?format=webp&width=800"
