@@ -54,9 +54,9 @@ const testCategories: TestCategory[] = [
     title: 'Langlebigkeit',
     icon: Shield,
     items: [
-      { id: '18', name: 'Biologisches Alter', description: 'Eine Einschätzung deines physiologischen Alters basierend auf Gesundheitsmarkern, nicht nur der Anzahl der Jahre.' },
-      { id: '19', name: 'STELY-Punktzahl', description: 'Ein umfassender Gesundheitsscore, der alle deine Messwerte kombiniert, um deine allgemeine Gesundheit zu bewerten.' },
-      { id: '20', name: 'Personalisierte Baselines', description: 'Individuelle Referenzwerte, die deine Ausgangsmessungen verfolgen und Verbesserungen im Laufe der Zeit zeigen.' },
+      { id: '18', name: 'Biologisches Alter', description: 'Das biologische Alter zeigt anhand deiner Laborwerte, wie gut dein Körper tatsächlich funktioniert. Es liefert einen tieferen Einblick darin, wie sich deine Gesundheit im Vergleich zu deinem tatsächlichen Alter entwickelt.' },
+      { id: '19', name: 'STELY Score', description: 'Der STELY Score fasst wichtige Gesundheitsindikatoren zusammen, damit du deinen gesamten Zustand und deine Fortschritte leichter verfolgen kannst.' },
+      { id: '20', name: 'Personalisierte Ausgangswerte', description: 'Personalisierte Ausgangswerte zeigen dein echtes Normal, indem sie Durchschnittswerte über 3, 6 und 12 Monate abbilden. So erkennst du echte Veränderungen in deiner Gesundheit im Laufe der Zeit.' },
     ],
   },
 ];
