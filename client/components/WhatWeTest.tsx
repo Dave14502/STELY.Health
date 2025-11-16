@@ -1,11 +1,11 @@
 import { useState } from 'react';
-import { Plus, Minus, Female, Male, Scale, Heart, Zap, Flame } from 'lucide-react';
+import { Plus, Minus, Heart, Activity, Scale, Zap, Flame } from 'lucide-react';
 
 interface TestItem {
   id: string;
   name: string;
   description: string;
-  icon?: typeof Female;
+  icon?: typeof Heart;
 }
 
 interface TestCategory {
@@ -20,10 +20,10 @@ const testCategories: TestCategory[] = [
     icon: Scale,
     items: [
       { id: '1', name: 'Östrogen (Östradiol E2)', description: 'Östrogen ist ein wichtiges Hormon bei Männern und Frauen, das die reproduktive Gesundheit, Stimmung, Knochengesundheit und das allgemeine hormonelle Gleichgewicht unterstützt.' },
-      { id: '2', name: 'Progesteron', description: 'Progesteron hilft dabei, Hormone im Gleichgewicht zu halten und unterstützt Schlaf, Stimmung und die allgemeine Stabilität im Körper.', icon: Female },
+      { id: '2', name: 'Progesteron', description: 'Progesteron hilft dabei, Hormone im Gleichgewicht zu halten und unterstützt Schlaf, Stimmung und die allgemeine Stabilität im Körper.', icon: Heart },
       { id: '3', name: 'SHBG (Sexualhormon bindendes Globulin)', description: 'SHBG kontrolliert, wie viel aktives Östrogen und Testosteron dein Körper nutzen kann, was Einfluss auf Energie, Stimmung und Libido hat.' },
       { id: '4', name: 'TSH (Thyreoidea stimulierendes Hormon)', description: 'Ein Hormon, das die Schilddrüse reguliert. Es steuert Stoffwechsel, Energie und die Temperaturregulation.' },
-      { id: '5', name: 'Gesamt und freies Testosteron', description: 'Testosteron beeinflusst Muskelmasse, Energie, Stimmung, Libido und Knochengesundheit.', icon: Male },
+      { id: '5', name: 'Gesamt und freies Testosteron', description: 'Testosteron beeinflusst Muskelmasse, Energie, Stimmung, Libido und Knochengesundheit.', icon: Activity },
     ],
   },
   {
