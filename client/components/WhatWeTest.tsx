@@ -72,11 +72,11 @@ export default function WhatWeTest() {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-5xl font-bold text-center mb-16">Was wir jeden Monat testen</h2>
 
-        <div className="space-y-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {testCategories.map((category) => (
             <div key={category.title}>
               <h3 className="text-2xl font-semibold text-center mb-6 text-gray-900">{category.title}</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="space-y-2">
                 {category.items.map((item) => {
                   const IconComponent = item.icon;
                   return (
