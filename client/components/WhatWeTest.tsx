@@ -96,18 +96,18 @@ export default function WhatWeTest() {
                         <span className="text-sm font-medium text-gray-900">{item.name}</span>
                         <div className="flex items-center gap-3">
                           {item.genderIcon === 'female' && (
-                            <svg className="w-4 h-4 text-gray-400 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                              <circle cx="12" cy="8" r="4" />
-                              <path d="M12 12v7" />
-                              <path d="M9 16h6" />
-                            </svg>
+                            <img
+                              src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fce73db9ef8034802acd120660441905d?format=webp&width=800"
+                              alt="Female"
+                              className="w-4 h-4 flex-shrink-0"
+                            />
                           )}
                           {item.genderIcon === 'male' && (
-                            <svg className="w-4 h-4 text-gray-400 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                              <circle cx="10" cy="8" r="4" />
-                              <path d="M10 12v6" />
-                              <path d="M14 6l6-6v5h5" />
-                            </svg>
+                            <img
+                              src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2F35abe8a5af4d4ea892c58c979786750e?format=webp&width=800"
+                              alt="Male"
+                              className="w-4 h-4 flex-shrink-0"
+                            />
                           )}
                           {expandedItems.includes(item.id) ? (
                             <Minus className="w-4 h-4 text-gray-400 flex-shrink-0" />
