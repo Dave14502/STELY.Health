@@ -11,7 +11,7 @@ export default function Pricing({ onOpenWaitlist }: PricingProps) {
     'Analyse in deutschen Partnerlaboren',
     'Klar verständliche Ergebnisse im Dashboard',
     'Monatliche Trendlinien statt einer Momentaufnahme',
-    'Persönlicher Support – keine Callcenterantworten',
+    'Persönlicher Support',
   ];
 
   const metadata = [
