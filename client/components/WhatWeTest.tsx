@@ -17,6 +17,7 @@ interface TestCategory {
 const testCategories: TestCategory[] = [
   {
     title: 'Hormonelles Gleichgewicht',
+    icon: Scale,
     items: [
       { id: '1', name: 'Östrogen (Östradiol E2)', description: 'Östrogen ist ein wichtiges Hormon bei Männern und Frauen, das die reproduktive Gesundheit, Stimmung, Knochengesundheit und das allgemeine hormonelle Gleichgewicht unterstützt.' },
       { id: '2', name: 'Progesteron', description: 'Progesteron hilft dabei, Hormone im Gleichgewicht zu halten und unterstützt Schlaf, Stimmung und die allgemeine Stabilität im Körper.', icon: Female },
