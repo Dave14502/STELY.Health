@@ -24,7 +24,7 @@ export default function Index() {
             <div>
               {/* Main Headline */}
               <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Monatliche Blutanalyse. Maximale Kontrolle über deine Performance.
+                Kontrolle über deine Performance.
               </h1>
 
               {/* Subheadline */}
