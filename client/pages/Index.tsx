@@ -1,13 +1,13 @@
-import { useState } from 'react';
-import Header from '@/components/Header';
-import HowItWorks from '@/components/HowItWorks';
-import WhatWeTest from '@/components/WhatWeTest';
-import WayBetter from '@/components/WayBetter';
-import Pricing from '@/components/Pricing';
-import FAQ from '@/components/FAQ';
-import Footer from '@/components/Footer';
-import CookieConsent from '@/components/CookieConsent';
-import WaitlistModal from '@/components/WaitlistModal';
+import { useState } from "react";
+import Header from "@/components/Header";
+import HowItWorks from "@/components/HowItWorks";
+import WhatWeTest from "@/components/WhatWeTest";
+import WayBetter from "@/components/WayBetter";
+import Pricing from "@/components/Pricing";
+import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
+import CookieConsent from "@/components/CookieConsent";
+import WaitlistModal from "@/components/WaitlistModal";
 
 export default function Index() {
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
@@ -104,63 +104,127 @@ export default function Index() {
           <div className="max-w-7xl mx-auto">
             <div className="carousel-wrapper">
               <div className="carousel-container">
-              <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7 12a5 5 0 1110 0A5 5 0 017 12z" />
-                </svg>
-                <p className="text-gray-700 font-medium text-sm text-center">CE-gekennzeichnetes Testkit nach EU-IVDR</p>
-              </div>
-              <div className="carousel-item">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fd2be1f409e834d6dada82b4e83238010?format=webp&width=800"
-                  alt="Mikroskop"
-                  className="w-6 h-6 flex-shrink-0"
-                />
-                <p className="text-gray-700 font-medium text-sm text-center">Analyse in deutschen Partnerlaboren</p>
-              </div>
-              <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-                <p className="text-gray-700 font-medium text-sm text-center">Datenschutz nach DSGVO mit EU-Servern</p>
-              </div>
-              <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                  <rect x="10" y="2" width="4" height="20" rx="1" />
-                  <rect x="2" y="10" width="20" height="4" rx="1" />
-                </svg>
-                <p className="text-gray-700 font-medium text-sm text-center">Medizinisch geprüfte und klar erklärte Ergebnisse</p>
-              </div>
+                <div className="carousel-item">
+                  <svg
+                    className="w-6 h-6 text-gray-700 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4M7 12a5 5 0 1110 0A5 5 0 017 12z"
+                    />
+                  </svg>
+                  <p className="text-gray-700 font-medium text-sm text-center">
+                    CE-gekennzeichnetes Testkit nach EU-IVDR
+                  </p>
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fd2be1f409e834d6dada82b4e83238010?format=webp&width=800"
+                    alt="Mikroskop"
+                    className="w-6 h-6 flex-shrink-0"
+                  />
+                  <p className="text-gray-700 font-medium text-sm text-center">
+                    Analyse in deutschen Partnerlaboren
+                  </p>
+                </div>
+                <div className="carousel-item">
+                  <svg
+                    className="w-6 h-6 text-gray-700 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                    />
+                  </svg>
+                  <p className="text-gray-700 font-medium text-sm text-center">
+                    Datenschutz nach DSGVO mit EU-Servern
+                  </p>
+                </div>
+                <div className="carousel-item">
+                  <svg
+                    className="w-6 h-6 text-gray-700 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect x="10" y="2" width="4" height="20" rx="1" />
+                    <rect x="2" y="10" width="20" height="4" rx="1" />
+                  </svg>
+                  <p className="text-gray-700 font-medium text-sm text-center">
+                    Medizinisch geprüfte und klar erklärte Ergebnisse
+                  </p>
+                </div>
 
-              {/* Duplicate items for infinite loop */}
-              <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4M7 12a5 5 0 1110 0A5 5 0 017 12z" />
-                </svg>
-                <p className="text-gray-700 font-medium text-sm text-center">CE-gekennzeichnetes Testkit nach EU-IVDR</p>
+                {/* Duplicate items for infinite loop */}
+                <div className="carousel-item">
+                  <svg
+                    className="w-6 h-6 text-gray-700 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M9 12l2 2 4-4M7 12a5 5 0 1110 0A5 5 0 017 12z"
+                    />
+                  </svg>
+                  <p className="text-gray-700 font-medium text-sm text-center">
+                    CE-gekennzeichnetes Testkit nach EU-IVDR
+                  </p>
+                </div>
+                <div className="carousel-item">
+                  <img
+                    src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fd2be1f409e834d6dada82b4e83238010?format=webp&width=800"
+                    alt="Mikroskop"
+                    className="w-6 h-6 flex-shrink-0"
+                  />
+                  <p className="text-gray-700 font-medium text-sm text-center">
+                    Analyse in deutschen Partnerlaboren
+                  </p>
+                </div>
+                <div className="carousel-item">
+                  <svg
+                    className="w-6 h-6 text-gray-700 flex-shrink-0"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                    />
+                  </svg>
+                  <p className="text-gray-700 font-medium text-sm text-center">
+                    Datenschutz nach DSGVO mit EU-Servern
+                  </p>
+                </div>
+                <div className="carousel-item">
+                  <svg
+                    className="w-6 h-6 text-gray-700 flex-shrink-0"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <rect x="10" y="2" width="4" height="20" rx="1" />
+                    <rect x="2" y="10" width="20" height="4" rx="1" />
+                  </svg>
+                  <p className="text-gray-700 font-medium text-sm text-center">
+                    Medizinisch geprüfte und klar erklärte Ergebnisse
+                  </p>
+                </div>
               </div>
-              <div className="carousel-item">
-                <img
-                  src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fd2be1f409e834d6dada82b4e83238010?format=webp&width=800"
-                  alt="Mikroskop"
-                  className="w-6 h-6 flex-shrink-0"
-                />
-                <p className="text-gray-700 font-medium text-sm text-center">Analyse in deutschen Partnerlaboren</p>
-              </div>
-              <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                </svg>
-                <p className="text-gray-700 font-medium text-sm text-center">Datenschutz nach DSGVO mit EU-Servern</p>
-              </div>
-              <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                  <rect x="10" y="2" width="4" height="20" rx="1" />
-                  <rect x="2" y="10" width="20" height="4" rx="1" />
-                </svg>
-                <p className="text-gray-700 font-medium text-sm text-center">Medizinisch geprüfte und klar erklärte Ergebnisse</p>
-              </div>
-            </div>
             </div>
           </div>
         </div>
@@ -175,7 +239,10 @@ export default function Index() {
 
       <Footer />
       <CookieConsent />
-      <WaitlistModal isOpen={isWaitlistOpen} onClose={() => setIsWaitlistOpen(false)} />
+      <WaitlistModal
+        isOpen={isWaitlistOpen}
+        onClose={() => setIsWaitlistOpen(false)}
+      />
     </div>
   );
 }

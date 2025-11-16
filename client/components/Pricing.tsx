@@ -1,4 +1,4 @@
-import { Check } from 'lucide-react';
+import { Check } from "lucide-react";
 
 interface PricingProps {
   onOpenWaitlist: () => void;
@@ -6,22 +6,25 @@ interface PricingProps {
 
 export default function Pricing({ onOpenWaitlist }: PricingProps) {
   const features = [
-    'Ein neues Testkit jeden Monat',
-    'Schneller Versand und einfacher Rückversand',
-    'Analyse in deutschen Partnerlaboren',
-    'Klar verständliche Ergebnisse im Dashboard',
-    'Monatliche Trendlinien statt einer Momentaufnahme',
-    'Persönlicher Support',
+    "Ein neues Testkit jeden Monat",
+    "Schneller Versand und einfacher Rückversand",
+    "Analyse in deutschen Partnerlaboren",
+    "Klar verständliche Ergebnisse im Dashboard",
+    "Monatliche Trendlinien statt einer Momentaufnahme",
+    "Persönlicher Support",
   ];
 
   const metadata = [
-    'Pro Test abgerechnet',
-    'Jederzeit pausieren oder kündigen',
-    'Keine Mindestlaufzeit',
+    "Pro Test abgerechnet",
+    "Jederzeit pausieren oder kündigen",
+    "Keine Mindestlaufzeit",
   ];
 
   return (
-    <section id="pricing" className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200">
+    <section
+      id="pricing"
+      className="w-full py-20 px-4 sm:px-6 lg:px-8 bg-white border-t border-gray-200"
+    >
       <div className="max-w-6xl mx-auto">
         <div className="rounded-2xl overflow-hidden bg-white border border-gray-200 shadow-sm p-8 lg:p-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
@@ -38,13 +41,19 @@ export default function Pricing({ onOpenWaitlist }: PricingProps) {
             <div className="flex flex-col justify-start">
               {/* Header and Price */}
               <div className="mb-8">
-                <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">STELY Mitgliedschaft</h2>
+                <h2 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
+                  STELY Mitgliedschaft
+                </h2>
                 <div className="mb-4">
                   <div className="flex items-baseline gap-1 mb-1">
-                    <span className="text-5xl font-bold text-gray-900">89 €</span>
+                    <span className="text-5xl font-bold text-gray-900">
+                      89 €
+                    </span>
                     <span className="text-lg text-gray-600">/Monat</span>
                   </div>
-                  <p className="text-sm text-gray-500">+ Versand & Bearbeitung</p>
+                  <p className="text-sm text-gray-500">
+                    + Versand & Bearbeitung
+                  </p>
                 </div>
               </div>
 
@@ -52,7 +61,9 @@ export default function Pricing({ onOpenWaitlist }: PricingProps) {
               <p className="text-gray-700 mb-8">
                 <span className="font-semibold">Einfach. Schnell. Klar.</span>
                 <br />
-                <span className="text-gray-600">Monatliche Blutanalyse für echte Performance.</span>
+                <span className="text-gray-600">
+                  Monatliche Blutanalyse für echte Performance.
+                </span>
               </p>
 
               {/* CTA Button */}
@@ -66,7 +77,10 @@ export default function Pricing({ onOpenWaitlist }: PricingProps) {
               {/* Metadata Tags */}
               <div className="flex gap-2 mb-8 flex-nowrap overflow-x-auto">
                 {metadata.map((tag, index) => (
-                  <span key={index} className="text-xs text-gray-600 border border-gray-300 px-2 py-1 rounded-full bg-gray-50 whitespace-nowrap flex-shrink-0">
+                  <span
+                    key={index}
+                    className="text-xs text-gray-600 border border-gray-300 px-2 py-1 rounded-full bg-gray-50 whitespace-nowrap flex-shrink-0"
+                  >
                     {tag}
                   </span>
                 ))}
@@ -74,7 +88,9 @@ export default function Pricing({ onOpenWaitlist }: PricingProps) {
 
               {/* What's Included */}
               <div>
-                <h3 className="font-bold mb-4 text-gray-900 text-lg">Was ist enthalten</h3>
+                <h3 className="font-bold mb-4 text-gray-900 text-lg">
+                  Was ist enthalten
+                </h3>
                 <div className="space-y-3">
                   {features.map((item, index) => (
                     <div key={index} className="flex items-start gap-3">

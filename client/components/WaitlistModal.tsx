@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { X, CheckCircle2 } from 'lucide-react';
+import { useState } from "react";
+import { X, CheckCircle2 } from "lucide-react";
 
 interface WaitlistModalProps {
   isOpen: boolean;
@@ -7,7 +7,7 @@ interface WaitlistModalProps {
 }
 
 export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [isLoading, setIsLoading] = useState(false);
   const [success, setSuccess] = useState(false);
 
@@ -21,17 +21,17 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
     try {
       // Submit to Netlify Forms
       const formData = new FormData(e.currentTarget);
-      const response = await fetch('/', {
-        method: 'POST',
+      const response = await fetch("/", {
+        method: "POST",
         headers: {
-          'Content-Type': 'application/x-www-form-urlencoded',
+          "Content-Type": "application/x-www-form-urlencoded",
         },
         body: new URLSearchParams(formData as any).toString(),
       });
 
       if (response.ok) {
         setSuccess(true);
-        setEmail('');
+        setEmail("");
 
         // Close modal after success message
         setTimeout(() => {
@@ -39,11 +39,11 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
           setSuccess(false);
         }, 2500);
       } else {
-        throw new Error('Form submission failed');
+        throw new Error("Form submission failed");
       }
     } catch (error) {
-      console.error('Error joining waitlist:', error);
-      alert('Ein Fehler ist aufgetreten. Bitte versuche es später erneut.');
+      console.error("Error joining waitlist:", error);
+      alert("Ein Fehler ist aufgetreten. Bitte versuche es später erneut.");
     } finally {
       setIsLoading(false);
     }
@@ -71,7 +71,9 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
               <div className="w-20 h-20 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5">
                 <CheckCircle2 className="w-10 h-10 text-blue-500" />
               </div>
-              <h2 className="text-2xl font-bold text-gray-900 mb-2">Geschafft!</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-2">
+                Geschafft!
+              </h2>
               <p className="text-gray-600 leading-relaxed">
                 Überprüfe deine E-Mail für deinen 10 Prozent Rabattcode. 🎉
               </p>
@@ -83,7 +85,8 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
                   Sichere dir 10 Prozent Rabatt auf deinen ersten STELY Test.
                 </h2>
                 <p className="text-gray-600 leading-relaxed">
-                  Trag dich ein und erfahre als Erstes, wenn die Performance-Kits starten. Kein Spam.
+                  Trag dich ein und erfahre als Erstes, wenn die
+                  Performance-Kits starten. Kein Spam.
                 </p>
               </div>
 
@@ -117,13 +120,14 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
                       Wird hinzugefügt...
                     </span>
                   ) : (
-                    'Rabatt sichern'
+                    "Rabatt sichern"
                   )}
                 </button>
               </form>
 
               <p className="text-xs text-gray-500 text-center mb-6 leading-relaxed">
-                Mit deiner Anmeldung stimmst du der Verarbeitung deiner Daten nach DSGVO und unserer Datenschutzerklärung zu.
+                Mit deiner Anmeldung stimmst du der Verarbeitung deiner Daten
+                nach DSGVO und unserer Datenschutzerklärung zu.
               </p>
 
               {/* Trust Indicators */}
