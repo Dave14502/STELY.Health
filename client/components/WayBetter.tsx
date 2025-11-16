@@ -40,7 +40,7 @@ export default function WayBetter() {
             <p className="text-base text-gray-700 text-center mb-8">Keine überflüssigen Tests. Wir messen, was wirklich Einfluss auf deine Performance, Energie und Gesundheit hat.</p>
             <div className="w-full h-80 lg:h-96 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center overflow-hidden">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fdd3c5d81b6eb4ffe8646c21c5363f1d7?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2F2dac9fcd2d5a47b9a906897ee15b1458?format=webp&width=800"
                 alt="Effizienter"
                 className="w-full h-full object-contain"
               />
