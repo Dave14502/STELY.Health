@@ -24,13 +24,12 @@ export default function WayBetter() {
             <h3 className="text-2xl lg:text-3xl font-bold text-center mb-4 text-gray-900">Weniger Zeit</h3>
             <p className="text-lg font-semibold text-center mb-4 text-gray-900">Keine Wartezeiten</p>
             <p className="text-base text-gray-700 text-center mb-8">Kein Termin beim Arzt. Keine Wartezimmer. Kein verpasstes Training. Mach es, wann es dir passt.</p>
-            <div className="w-full h-80 lg:h-96 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center overflow-hidden relative">
+            <div className="w-full h-80 lg:h-96 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center overflow-hidden">
               <img
                 src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2F9b6446b54be7401284ff957faa7f3a5b?format=webp&width=800"
                 alt="Weniger Zeit"
                 className="w-full h-full object-contain"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-400 to-white opacity-20 rounded-xl pointer-events-none"></div>
             </div>
           </div>
 
