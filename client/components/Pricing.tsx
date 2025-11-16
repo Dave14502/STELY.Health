@@ -58,15 +58,15 @@ export default function Pricing({ onOpenWaitlist }: PricingProps) {
               {/* CTA Button */}
               <button
                 onClick={onOpenWaitlist}
-                className="bg-gray-900 hover:bg-black text-white py-3 rounded-lg font-bold transition mb-4 text-base w-full sm:w-auto"
+                className="bg-blue-500 hover:bg-blue-600 text-white py-3 rounded-lg font-bold transition mb-4 text-base w-full sm:w-auto"
               >
                 Jetzt ersten Test sichern
               </button>
 
               {/* Metadata Tags */}
-              <div className="flex gap-1 mb-8 flex-wrap">
+              <div className="flex gap-2 mb-8 flex-nowrap overflow-x-auto">
                 {metadata.map((tag, index) => (
-                  <span key={index} className="text-xs text-gray-600 border border-gray-300 px-2 py-1 rounded-full bg-gray-50 whitespace-nowrap">
+                  <span key={index} className="text-xs text-gray-600 border border-gray-300 px-2 py-1 rounded-full bg-gray-50 whitespace-nowrap flex-shrink-0">
                     {tag}
                   </span>
                 ))}
