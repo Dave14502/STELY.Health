@@ -19,14 +19,18 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
     setIsLoading(true);
 
     try {
-      // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Send to Google Sheets via Netlify Function
+      const response = await fetch('/.netlify/functions/waitlist', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+      });
 
-      // Save to localStorage
-      const waitlist = JSON.parse(localStorage.getItem('waitlist') || '[]');
-      if (!waitlist.includes(email)) {
-        waitlist.push(email);
-        localStorage.setItem('waitlist', JSON.stringify(waitlist));
+      if (!response.ok) {
+        const errorData = await response.json();
+        throw new Error(errorData.error || 'Failed to add email to waitlist');
       }
 
       setSuccess(true);
@@ -39,6 +43,8 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
       }, 2500);
     } catch (error) {
       console.error('Error joining waitlist:', error);
+      // Show error to user - optional
+      alert(error instanceof Error ? error.message : 'Ein Fehler ist aufgetreten. Bitte versuche es später erneut.');
     } finally {
       setIsLoading(false);
     }
