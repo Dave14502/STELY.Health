@@ -64,11 +64,9 @@ export default function Pricing({ onOpenWaitlist }: PricingProps) {
               </button>
 
               {/* Metadata Tags */}
-              <div className="flex flex-wrap gap-2 mb-8">
+              <div className="flex gap-3 mb-8 text-xs text-gray-600">
                 {metadata.map((tag, index) => (
-                  <span key={index} className="text-xs text-gray-600 bg-gray-100 px-3 py-1 rounded-full">
-                    {tag}
-                  </span>
+                  <span key={index}>{tag}{index < metadata.length - 1 && ' •'}</span>
                 ))}
               </div>
 
