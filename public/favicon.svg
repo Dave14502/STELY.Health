@@ -1,14 +1,37 @@
-<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-  <!-- Background -->
-  <rect width="100" height="100" fill="#3B82F6" rx="20"/>
+<svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Gradient Definition -->
+  <defs>
+    <linearGradient id="dropGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#3B82F6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1E40AF;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+  </defs>
   
-  <!-- Blood droplet shape with minimal design -->
-  <path d="M 50 25 C 50 25, 38 38, 38 48 C 38 58.05, 43.73 65, 50 65 C 56.27 65, 62 58.05, 62 48 C 62 38, 50 25, 50 25 Z" fill="white" opacity="0.95"/>
+  <!-- Background Circle -->
+  <circle cx="60" cy="60" r="58" fill="white"/>
+  <circle cx="60" cy="60" r="57" fill="url(#dropGradient)" filter="url(#shadow)"/>
   
-  <!-- Subtle heartbeat line -->
-  <line x1="30" y1="75" x2="35" y2="75" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-  <line x1="35" y1="75" x2="37" y2="70" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-  <line x1="37" y1="70" x2="39" y2="78" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-  <line x1="39" y1="78" x2="41" y2="72" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-  <line x1="41" y1="72" x2="70" y2="72" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
+  <!-- Blood Droplet -->
+  <path d="M 60 20 C 60 20, 45 38, 45 52 C 45 64.7, 51.73 75, 60 75 C 68.27 75, 75 64.7, 75 52 C 75 38, 60 20, 60 20 Z" 
+        fill="white" opacity="0.95"/>
+  
+  <!-- Heartbeat Pulse Line -->
+  <g stroke="white" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.8">
+    <!-- First flat segment -->
+    <line x1="30" y1="95" x2="38" y2="95"/>
+    <!-- Small spike up -->
+    <polyline points="38,95 40,88 42,95"/>
+    <!-- Longer spike (main beat) -->
+    <polyline points="42,95 45,78 48,95"/>
+    <!-- Regular beat pattern -->
+    <polyline points="48,95 50,88 52,95"/>
+    <!-- Final flat segment -->
+    <line x1="52" y1="95" x2="90" y2="95"/>
+  </g>
+  
+  <!-- Optional: Subtle glow effect for premium look -->
+  <circle cx="60" cy="60" r="57" fill="none" stroke="white" stroke-width="0.5" opacity="0.3"/>
 </svg>
