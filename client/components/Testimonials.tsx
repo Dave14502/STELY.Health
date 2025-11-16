@@ -54,7 +54,8 @@ export default function Testimonials() {
         <div className="flex items-center justify-between gap-8">
           <button
             onClick={goToPrevious}
-            className="flex-shrink-0 w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition"
+            className="flex-shrink-0 w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition text-gray-600"
+            aria-label="Vorherige Bewertung"
           >
             <ChevronLeft className="w-6 h-6" />
           </button>
@@ -82,7 +83,8 @@ export default function Testimonials() {
 
           <button
             onClick={goToNext}
-            className="flex-shrink-0 w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition"
+            className="flex-shrink-0 w-12 h-12 rounded-full border border-gray-300 flex items-center justify-center hover:bg-gray-100 transition text-gray-600"
+            aria-label="Nächste Bewertung"
           >
             <ChevronRight className="w-6 h-6" />
           </button>
@@ -96,6 +98,7 @@ export default function Testimonials() {
               className={`w-2 h-2 rounded-full transition ${
                 index === currentIndex ? 'bg-blue-500' : 'bg-gray-300'
               }`}
+              aria-label={`Bewertung ${index + 1}`}
             />
           ))}
         </div>
