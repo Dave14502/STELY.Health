@@ -91,7 +91,7 @@ export default function Header({ onOpenWaitlist }: HeaderProps) {
             </button>
             <button
               onClick={onOpenWaitlist}
-              className="bg-black text-white px-6 py-2 rounded-full hover:bg-gray-900 transition font-medium text-left"
+              className="bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition font-medium text-left"
             >
               STELY erhalten
             </button>
