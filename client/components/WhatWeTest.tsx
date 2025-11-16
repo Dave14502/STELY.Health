@@ -28,7 +28,7 @@ const testCategories: TestCategory[] = [
   },
   {
     title: 'Herzgesundheit',
-    icon: Heart,
+    icon: Scale,
     items: [
       { id: '6', name: 'ApoB', description: 'Apolipoprotein B ist ein starker Indikator für das Herzinfarkt- und Schlaganfallrisiko.' },
       { id: '7', name: 'LDL-Cholesterin', description: 'Das "schlechte" Cholesterin, das sich in den Arterien ansammeln und das Herzerkrankungsrisiko erhöhen kann.' },
@@ -81,15 +81,13 @@ export default function WhatWeTest() {
           {testCategories.map((category) => {
             const CategoryIcon = category.icon;
             return (
-            <div key={category.title}>
-              <div className="flex flex-col items-center mb-6">
-                <CategoryIcon className="w-6 h-6 text-gray-400 mb-2" />
-                <h3 className="text-2xl font-semibold text-center text-gray-900">{category.title}</h3>
-              </div>
-              <div className="space-y-2">
-                {category.items.map((item) => {
-                  const IconComponent = item.icon;
-                  return (
+              <div key={category.title}>
+                <div className="flex flex-col items-center mb-6">
+                  <CategoryIcon className="w-6 h-6 text-gray-400 mb-2" />
+                  <h3 className="text-2xl font-semibold text-center text-gray-900">{category.title}</h3>
+                </div>
+                <div className="space-y-2">
+                  {category.items.map((item) => (
                     <div key={item.id} className="border border-gray-200 rounded-lg overflow-hidden bg-white hover:border-gray-300 transition">
                       <button
                         onClick={() => toggleItem(item.id)}
@@ -97,7 +95,18 @@ export default function WhatWeTest() {
                       >
                         <span className="text-sm font-medium text-gray-900">{item.name}</span>
                         <div className="flex items-center gap-3">
-                          {IconComponent && <IconComponent className="w-4 h-4 text-gray-400 flex-shrink-0" />}
+                          {item.genderIcon === 'female' && (
+                            <svg className="w-4 h-4 text-gray-400 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                              <circle cx="12" cy="8" r="4" />
+                              <path d="M12 12v7M9 19h6" />
+                            </svg>
+                          )}
+                          {item.genderIcon === 'male' && (
+                            <svg className="w-4 h-4 text-gray-400 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                              <circle cx="15" cy="8" r="4" />
+                              <path d="M15 12v7M12 19h6M15 12l-5-5" />
+                            </svg>
+                          )}
                           {expandedItems.includes(item.id) ? (
                             <Minus className="w-4 h-4 text-gray-400 flex-shrink-0" />
                           ) : (
@@ -114,11 +123,10 @@ export default function WhatWeTest() {
                         </div>
                       )}
                     </div>
-                  );
-                })}
+                  ))}
+                </div>
               </div>
-            </div>
-          );
+            );
           })}
         </div>
       </div>
