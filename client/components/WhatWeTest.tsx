@@ -39,7 +39,7 @@ const testCategories: TestCategory[] = [
   },
   {
     title: 'Stoffwechseleffizienz',
-    icon: Zap,
+    icon: Leaf,
     items: [
       { id: '11', name: 'Ferritin (Eisen)', description: 'Ein Protein, das Eisen speichert und für die Sauerstofftransport- und Energieproduktion wichtig ist.' },
       { id: '12', name: 'Albumin', description: 'Das Hauptblutprotein, das Nährstoffe transportiert und die Gesundheit unterstützt.' },
