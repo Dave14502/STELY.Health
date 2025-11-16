@@ -24,26 +24,33 @@ export default function Index() {
             <div>
               {/* Main Headline */}
               <h1 className="text-5xl sm:text-6xl font-bold text-gray-900 mb-6 leading-tight">
-                Monatlich macht Sinn mit dem einfachsten Bluttest der Welt
+                Monatliche Blutanalyse. Maximale Kontrolle über deine Performance.
               </h1>
 
               {/* Subheadline */}
               <p className="text-lg sm:text-xl text-gray-700 mb-6 leading-relaxed">
-                Jeden Monat. Ein umfassender Test zu Hause, kostenlose Abholung und verwertbare Ergebnisse in Tagen.
+                Ein Test zu Hause. Ein klarer Bericht. Ein System, das dir zeigt, wie dein Körper wirklich funktioniert.
               </p>
 
               {/* Price */}
-              <p className="text-lg text-gray-900 mb-8">
-                <span className="font-bold">Ab 89€ im Monat</span>
+              <p className="text-lg text-gray-900 mb-4">
+                <span className="font-bold">Für nur 79 Euro im Monat.</span>
+              </p>
+
+              <p className="text-base text-gray-600 mb-8">
+                Kein Arztbesuch. Kein Warten. Keine Bürokratie.
               </p>
 
               {/* CTA Button */}
               <button
                 onClick={() => setIsWaitlistOpen(true)}
-                className="bg-blue-500 hover:bg-blue-600 text-white font-bold px-8 py-3 rounded-full transition shadow-lg hover:shadow-xl text-lg"
+                className="bg-blue-500 hover:bg-blue-600 text-white font-bold px-8 py-3 rounded-full transition shadow-lg hover:shadow-xl text-lg mb-4"
               >
-                Hol dir deinen ersten Test
+                Jetzt starten
               </button>
+              <p className="text-sm text-gray-600">
+                Inklusive CE-zertifiziertem Bluttest und Auswertung durch EU-Labore
+              </p>
             </div>
 
             {/* Right Image */}
