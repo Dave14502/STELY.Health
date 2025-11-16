@@ -71,10 +71,10 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
                 <CheckCircle2 className="w-10 h-10 text-blue-500" />
               </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-2">
-                Geschafft!
+                Erfolgreich!
               </h2>
               <p className="text-gray-600 leading-relaxed">
-                Überprüfe deine E-Mail für deinen 10 Prozent Rabattcode. 🎉
+                Du bist auf der Waitlist. Wir informieren dich beim Launch. 🚀
               </p>
             </div>
           ) : (
