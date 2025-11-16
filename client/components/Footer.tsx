@@ -47,9 +47,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Rechtlich</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-white transition relative group">Rückerstattungs- und Übersprungrichtlinie<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span></a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition relative group">Allgemeine Geschäftsbedingungen<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span></a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white transition relative group">Datenschutzrichtlinie<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-400 group-hover:w-full transition-all duration-300"></span></a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition relative group">Rückerstattungs- und Übersprungrichtlinie<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span></a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition relative group">Allgemeine Geschäftsbedingungen<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span></a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white transition relative group">Datenschutzrichtlinie<span className="absolute bottom-0 left-0 w-0 h-0.5 bg-blue-500 group-hover:w-full transition-all duration-300"></span></a></li>
             </ul>
           </div>
         </div>
