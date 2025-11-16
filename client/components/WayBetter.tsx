@@ -12,7 +12,7 @@ export default function WayBetter() {
             <p className="text-base text-gray-700 text-center mb-8">Nur ein paar Tropfen statt mehrere Röhrchen. Einfacher. Schneller. Weniger unangenehm.</p>
             <div className="w-full h-80 lg:h-96 rounded-xl bg-gray-50 border border-gray-200 flex items-center justify-center overflow-hidden">
               <img
-                src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Ffd07ec78d8904dcab7a5bc989d5a1baf?format=webp&width=800"
+                src="https://cdn.builder.io/api/v1/image/assets%2F29271f19638b45b0980662fdd6c70134%2Fe2776fc833734b14abad9d844ee71225?format=webp&width=800"
                 alt="Weniger Blut"
                 className="w-full h-full object-contain"
               />
