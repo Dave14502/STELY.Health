@@ -52,7 +52,7 @@ const testCategories: TestCategory[] = [
   },
   {
     title: 'Langlebigkeit',
-    icon: Flame,
+    icon: Shield,
     items: [
       { id: '18', name: 'Biologisches Alter', description: 'Eine Einschätzung deines physiologischen Alters basierend auf Gesundheitsmarkern, nicht nur der Anzahl der Jahre.' },
       { id: '19', name: 'STELY-Punktzahl', description: 'Ein umfassender Gesundheitsscore, der alle deine Messwerte kombiniert, um deine allgemeine Gesundheit zu bewerten.' },
