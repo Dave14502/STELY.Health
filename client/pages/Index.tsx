@@ -125,9 +125,8 @@ export default function Index() {
                 <p className="text-gray-700 font-medium text-sm text-center">Datenschutz nach DSGVO mit EU-Servern</p>
               </div>
               <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                  <rect x="2" y="10" width="20" height="4" />
-                  <rect x="10" y="2" width="4" height="20" />
+                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                 </svg>
                 <p className="text-gray-700 font-medium text-sm text-center">Medizinisch geprüfte und klar erklärte Ergebnisse</p>
               </div>
@@ -154,9 +153,8 @@ export default function Index() {
                 <p className="text-gray-700 font-medium text-sm text-center">Datenschutz nach DSGVO mit EU-Servern</p>
               </div>
               <div className="carousel-item">
-                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                  <rect x="2" y="10" width="20" height="4" />
-                  <rect x="10" y="2" width="4" height="20" />
+                <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
                 </svg>
                 <p className="text-gray-700 font-medium text-sm text-center">Medizinisch geprüfte und klar erklärte Ergebnisse</p>
               </div>
