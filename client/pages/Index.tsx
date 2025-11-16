@@ -124,7 +124,7 @@ export default function Index() {
               </div>
               <div className="carousel-item">
                 <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9h-2.5v2.5h-2v-2.5H8v-2h2.5V8h2v2.5h2.5v2z" />
+                  <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
                 </svg>
                 <p className="text-gray-700 font-medium text-sm text-center">Medizinisch geprüfte und klar erklärte Ergebnisse</p>
               </div>
@@ -150,7 +150,7 @@ export default function Index() {
               </div>
               <div className="carousel-item">
                 <svg className="w-6 h-6 text-gray-700 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm3.5-9h-2.5v2.5h-2v-2.5H8v-2h2.5V8h2v2.5h2.5v2z" />
+                  <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z" />
                 </svg>
                 <p className="text-gray-700 font-medium text-sm text-center">Medizinisch geprüfte und klar erklärte Ergebnisse</p>
               </div>
