@@ -19,19 +19,21 @@ export default function WaitlistModal({ isOpen, onClose }: WaitlistModalProps) {
     setIsLoading(true);
 
     try {
-      // Submit to Netlify Forms via the hidden form
-      const response = await fetch("/", {
+      const formData = new FormData(e.currentTarget);
+
+      await fetch("/", {
         method: "POST",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
         body: new URLSearchParams({
           "form-name": "waitlist",
-          email: email,
+          "bot-field": "",
+          "email": formData.get("email") as string,
         }).toString(),
       });
 
-      // Netlify may return 404 but still processes the form submission
+      // Show success message
       setSuccess(true);
       setEmail("");
 
